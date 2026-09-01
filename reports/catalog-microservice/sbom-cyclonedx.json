@@ -1,0 +1,5212 @@
+{
+  "$schema": "http://cyclonedx.org/schema/bom-1.7.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "serialNumber": "urn:uuid:f6e8df93-e59a-44a5-8927-ece941ffe09a",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-09-01T05:44:54+00:00",
+    "tools": {
+      "components": [
+        {
+          "type": "application",
+          "manufacturer": {
+            "name": "Aqua Security Software Ltd."
+          },
+          "group": "aquasecurity",
+          "name": "trivy",
+          "version": "0.74.0"
+        }
+      ]
+    },
+    "component": {
+      "bom-ref": "552aad2e-e478-404b-bb7c-8593b55da4cc",
+      "type": "application",
+      "name": "catalog-microservice",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:SchemaVersion",
+          "value": "2"
+        }
+      ]
+    }
+  },
+  "components": [
+    {
+      "bom-ref": "013ac7b3-c289-4273-ab7c-b62a06126c4d",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore.InMemory",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.InMemory@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore.InMemory/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "01c233cf-66f2-4fae-a579-6fc9c3af166c",
+      "type": "library",
+      "name": "Microsoft.Win32.Registry",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Win32.Registry@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "02a8d785-9fdf-4815-a3f0-6323ebc9126a",
+      "type": "library",
+      "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "version": "8.0.2",
+      "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "03fad9c6-6de3-4f39-b944-47301ec2027d",
+      "type": "library",
+      "name": "Serilog.Sinks.File",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/Serilog.Sinks.File@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Sinks.File/5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "079db34f-1a27-46c3-961d-748b5edf9f99",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Abstractions",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Abstractions@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Abstractions@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0abc2e2a-a0df-4bcf-9f5b-66e882ba125c",
+      "type": "library",
+      "name": "Fractions",
+      "version": "7.2.1",
+      "purl": "pkg:nuget/Fractions@7.2.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Fractions/7.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "0c80522f-4a29-4a05-93d1-d633a1b85ba1",
+      "type": "library",
+      "name": "prometheus-net",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/prometheus-net@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "prometheus-net/8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "12f385b7-383f-4a5d-a359-6998a481cb9c",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Protocols",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Protocols/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "13000322-97d7-46e6-b2e2-f09ba42384a6",
+      "type": "library",
+      "name": "Middleware",
+      "version": "1.0.0",
+      "purl": "pkg:nuget/Middleware@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Middleware/1.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "13e87607-db2c-4048-bda2-4114ac4ea927",
+      "type": "library",
+      "name": "DnsClient",
+      "version": "1.6.1",
+      "purl": "pkg:nuget/DnsClient@1.6.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "DnsClient@1.6.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "15b728c7-abd4-429c-b2d8-2a3621019422",
+      "type": "library",
+      "name": "System.Buffers",
+      "version": "4.5.1",
+      "purl": "pkg:nuget/System.Buffers@4.5.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Buffers@4.5.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "17b3b3bc-1576-4035-8221-7182ef149220",
+      "type": "library",
+      "name": "Microsoft.CodeAnalysis.Workspaces.Common",
+      "version": "4.5.0",
+      "purl": "pkg:nuget/Microsoft.CodeAnalysis.Workspaces.Common@4.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.CodeAnalysis.Workspaces.Common/4.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1b182b0a-5925-4fa2-b6a7-c5c4ab2e1b38",
+      "type": "library",
+      "name": "AWSSDK.Core",
+      "version": "3.7.100.14",
+      "purl": "pkg:nuget/AWSSDK.Core@3.7.100.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AWSSDK.Core@3.7.100.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1c3bf9f3-afc2-438e-b7d4-9e8c38142cd5",
+      "type": "library",
+      "name": "IdentityModel",
+      "version": "5.2.0",
+      "purl": "pkg:nuget/IdentityModel@5.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "IdentityModel@5.2.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1cf14772-f3f3-4200-80e4-b94bb5c4e00f",
+      "type": "library",
+      "name": "Serilog.Sinks.File",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/Serilog.Sinks.File@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Sinks.File@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "1dc3b201-be02-41b8-9c2e-3ff078736130",
+      "type": "library",
+      "name": "System.Security.AccessControl",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Security.AccessControl@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "209c0b4d-233d-4b30-931d-081c49d3586f",
+      "type": "library",
+      "name": "Microsoft.Extensions.Options",
+      "version": "8.0.2",
+      "purl": "pkg:nuget/Microsoft.Extensions.Options@8.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Options/8.0.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2401696e-78f6-41a5-ac8f-037225fa21fe",
+      "type": "library",
+      "name": "AWSSDK.Core",
+      "version": "3.7.100.14",
+      "purl": "pkg:nuget/AWSSDK.Core@3.7.100.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AWSSDK.Core@3.7.100.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "260aa8eb-d8f2-4ead-93df-7ed64a3eab6f",
+      "type": "library",
+      "name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "version": "8.0.11",
+      "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@8.0.11",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.AspNetCore.Authentication.JwtBearer@8.0.11"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "26a33beb-03fc-4146-ba98-36769ba10f2a",
+      "type": "library",
+      "name": "Microsoft.Extensions.Logging.Abstractions",
+      "version": "8.0.2",
+      "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Logging.Abstractions@8.0.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "29179f9b-bc93-40a7-b081-d966bb0a68e4",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore.Abstractions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Abstractions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore.Abstractions/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "291e2350-6061-4124-8b62-9edd15207091",
+      "type": "library",
+      "name": "Microsoft.CodeAnalysis.CSharp",
+      "version": "4.5.0",
+      "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@4.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.CodeAnalysis.CSharp/4.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "2f97bef8-7e42-4c1b-b2ee-d793489e5d2c",
+      "type": "library",
+      "name": "Microsoft.Extensions.Options",
+      "version": "8.0.2",
+      "purl": "pkg:nuget/Microsoft.Extensions.Options@8.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Options@8.0.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "32f449c2-0b61-4552-8bd2-3793b001c0a5",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Tokens",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Tokens/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3499951e-450a-4c8a-a4be-0146c1607a12",
+      "type": "library",
+      "name": "prometheus-net",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/prometheus-net@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "prometheus-net@8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "35e8462b-6622-4bca-8a92-efad8c8d2405",
+      "type": "library",
+      "name": "Snappier",
+      "version": "1.3.1",
+      "purl": "pkg:nuget/Snappier@1.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Snappier@1.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "361e63d4-e4af-4d46-847f-fad12240d7bf",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Logging",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Logging@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3648d70a-d766-4f54-ac12-1ccce69d0a1f",
+      "type": "library",
+      "name": "AWSSDK.SecurityToken",
+      "version": "3.7.100.14",
+      "purl": "pkg:nuget/AWSSDK.SecurityToken@3.7.100.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AWSSDK.SecurityToken/3.7.100.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "378ed558-9ed4-47d3-88a3-80758b29de3a",
+      "type": "library",
+      "name": "SharpCompress",
+      "version": "0.30.1",
+      "purl": "pkg:nuget/SharpCompress@0.30.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "SharpCompress/0.30.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "37e7bf27-ac9c-4977-8767-364dde756cd0",
+      "type": "library",
+      "name": "System.CodeDom",
+      "version": "4.4.0",
+      "purl": "pkg:nuget/System.CodeDom@4.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.CodeDom@4.4.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "38e6cf1a-943f-417f-8962-db6bcf153fa6",
+      "type": "library",
+      "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "version": "8.0.2",
+      "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "38fa15eb-5c31-4fc1-9283-3f0a00926863",
+      "type": "library",
+      "name": "IdentityModel",
+      "version": "5.2.0",
+      "purl": "pkg:nuget/IdentityModel@5.2.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "IdentityModel/5.2.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3a091209-933d-441d-8939-60dbd464ddc4",
+      "type": "library",
+      "name": "Microsoft.Win32.Registry",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/Microsoft.Win32.Registry@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Win32.Registry@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3d1cdf4a-d25a-4fb6-adbf-12b6cecbff9a",
+      "type": "library",
+      "name": "Microsoft.Extensions.Primitives",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Primitives@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Primitives@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3e6ba31d-c9aa-41a0-9227-dfad85a9b6ef",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.JsonWebTokens",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.JsonWebTokens/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "3f084158-cad9-44fe-b330-30e1a8231db8",
+      "type": "library",
+      "name": "Microsoft.Extensions.Caching.Memory",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/Microsoft.Extensions.Caching.Memory@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Caching.Memory/8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "431a4a25-6f9c-4917-affa-8c820eb23fa7",
+      "type": "library",
+      "name": "System.Composition.TypedParts",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.TypedParts@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.TypedParts/6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "43db78ec-2880-448b-a352-56ae66327e0e",
+      "type": "library",
+      "name": "MongoDB.Libmongocrypt",
+      "version": "1.12.0",
+      "purl": "pkg:nuget/MongoDB.Libmongocrypt@1.12.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Libmongocrypt/1.12.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "44a5356e-9b17-4f9d-baf6-aefd0ffc1185",
+      "type": "library",
+      "name": "DnsClient",
+      "version": "1.6.1",
+      "purl": "pkg:nuget/DnsClient@1.6.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "DnsClient/1.6.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "44b42885-358c-4c34-bbbf-33b203e87779",
+      "type": "library",
+      "name": "System.CodeDom",
+      "version": "4.4.0",
+      "purl": "pkg:nuget/System.CodeDom@4.4.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.CodeDom/4.4.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "44d48d29-73c3-4e78-bd51-cd0273d30b5b",
+      "type": "library",
+      "name": "MongoDB.Driver.Core",
+      "version": "2.30.0",
+      "purl": "pkg:nuget/MongoDB.Driver.Core@2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Driver.Core@2.30.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "45d282e9-5d62-4045-9128-df4729a2d1e7",
+      "type": "library",
+      "name": "Serilog.Sinks.Console",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/Serilog.Sinks.Console@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Sinks.Console/5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "480c5fa8-f7e8-4ba2-942b-50e2e167e134",
+      "type": "library",
+      "name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "version": "8.0.11",
+      "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@8.0.11",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.11"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4a6273f6-b2c9-4d79-9e47-a6afde9a54aa",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols.OpenIdConnect@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Protocols.OpenIdConnect@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4bdd4e27-f09a-42f2-968e-689c8a2c17e9",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.JsonWebTokens",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.JsonWebTokens/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4c4d1e80-2f86-4cad-a790-608bcde9e5d1",
+      "type": "library",
+      "name": "System.Composition.AttributedModel",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.AttributedModel@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.AttributedModel/6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4d3efead-3906-4f8b-9d2b-0f85681b5e29",
+      "type": "library",
+      "name": "MongoDB.Driver",
+      "version": "2.30.0",
+      "purl": "pkg:nuget/MongoDB.Driver@2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Driver/2.30.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "4fa6d000-789d-4737-9de3-47eef0de1edf",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Tokens",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Tokens@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "501833ae-43f9-4539-bcfa-b2dc0d2d6000",
+      "type": "library",
+      "name": "Microsoft.CodeAnalysis.Workspaces.Common",
+      "version": "4.5.0",
+      "purl": "pkg:nuget/Microsoft.CodeAnalysis.Workspaces.Common@4.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.CodeAnalysis.Workspaces.Common@4.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5126da74-39fe-46a7-936f-780cb0b3cbb5",
+      "type": "library",
+      "name": "Microsoft.Bcl.AsyncInterfaces",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Bcl.AsyncInterfaces@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "51d7d594-bd91-4f6b-a82e-4a0863db5618",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols.OpenIdConnect@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Protocols.OpenIdConnect/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "525dcc51-667d-4ed7-a0db-87fe0d782f62",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Tokens",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Tokens/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5332ac10-b321-49b8-9486-2723552cb470",
+      "type": "library",
+      "name": "System.Security.AccessControl",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/System.Security.AccessControl@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Security.AccessControl@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "536e640e-ac4f-4e23-8794-d29f6272a15f",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.JsonWebTokens",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.JsonWebTokens@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "55a54005-0620-4722-b91d-9e11d41a822b",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Abstractions",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Abstractions@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Abstractions@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "58656c5d-3c2a-417d-ac24-5573fe3dd227",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore.Design",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Design@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore.Design@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5891264e-38c2-42df-a6c9-8c208e61fc40",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore.Relational",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Relational@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore.Relational/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5cc16979-dcd7-4b7d-a022-5e234bf9481a",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Logging",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Logging@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5d9d8051-e8f0-43b8-ab7f-a232ca7c48ce",
+      "type": "library",
+      "name": "Microsoft.Extensions.Caching.Memory",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/Microsoft.Extensions.Caching.Memory@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Caching.Memory@8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5e146f26-6208-4e48-873e-b23eba80b913",
+      "type": "library",
+      "name": "KubernetesClient",
+      "version": "12.1.1",
+      "purl": "pkg:nuget/KubernetesClient@12.1.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "KubernetesClient/12.1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "5f05b7c4-ca27-4f9d-89b0-af0a01a00545",
+      "type": "library",
+      "name": "System.Security.Principal.Windows",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Security.Principal.Windows@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "601f1570-331e-4cb2-b644-29f01dede84c",
+      "type": "library",
+      "name": "Serilog.Extensions.Hosting",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Serilog.Extensions.Hosting@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Extensions.Hosting@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "60ddcb6b-dbb1-4ab4-b63a-a0d804752581",
+      "type": "library",
+      "name": "MongoDB.Libmongocrypt",
+      "version": "1.12.0",
+      "purl": "pkg:nuget/MongoDB.Libmongocrypt@1.12.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Libmongocrypt@1.12.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "62b6f746-a09a-40fd-bcf2-9a1a6aa72591",
+      "type": "library",
+      "name": "Serilog.Sinks.Debug",
+      "version": "2.0.0",
+      "purl": "pkg:nuget/Serilog.Sinks.Debug@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Sinks.Debug@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "62cf5234-7af1-42cd-abc4-684192aa9d78",
+      "type": "library",
+      "name": "YamlDotNet",
+      "version": "13.3.1",
+      "purl": "pkg:nuget/YamlDotNet@13.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "YamlDotNet@13.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6422b25f-8203-4801-bfe2-fc0deea23232",
+      "type": "library",
+      "name": "MongoDB.Bson",
+      "version": "2.30.0",
+      "purl": "pkg:nuget/MongoDB.Bson@2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Bson@2.30.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "6c822854-f0ee-488e-93da-7362422e8749",
+      "type": "library",
+      "name": "MongoDB.Bson",
+      "version": "2.30.0",
+      "purl": "pkg:nuget/MongoDB.Bson@2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Bson@2.30.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "71bb0922-1861-4ed6-96e4-2cdad9d5206a",
+      "type": "library",
+      "name": "System.Composition.Runtime",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.Runtime@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.Runtime/6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "725baa9e-e186-430e-bc87-5f884b0a0e20",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Tokens",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Tokens@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Tokens@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "72f76a34-7e73-4033-a6d4-12ef7994e1ec",
+      "type": "library",
+      "name": "Microsoft.Bcl.AsyncInterfaces",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/Microsoft.Bcl.AsyncInterfaces@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Bcl.AsyncInterfaces/6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "775666b2-0e19-4d38-807d-46e12be9a7f2",
+      "type": "application",
+      "name": "CatalogMicroservice/packages.lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "790a1ed0-0eaf-4271-ba7b-dbc04e677074",
+      "type": "library",
+      "name": "Serilog.Formatting.Compact",
+      "version": "2.0.0",
+      "purl": "pkg:nuget/Serilog.Formatting.Compact@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Formatting.Compact@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "79ac4d34-38bc-483e-a7aa-e9f3cd5b2a05",
+      "type": "library",
+      "name": "System.Composition.Convention",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.Convention@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.Convention/6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7ca35caf-1ad9-4b73-9f83-00a10ffa4fcb",
+      "type": "library",
+      "name": "Serilog.Extensions.Logging",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Serilog.Extensions.Logging@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Extensions.Logging@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "7e7aa87e-ef79-410b-b24a-bfaf0fce5a9f",
+      "type": "library",
+      "name": "Microsoft.Extensions.Configuration.Abstractions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Configuration.Abstractions@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "801a522f-c42b-4956-a5dc-f585899a6c65",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols.OpenIdConnect@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Protocols.OpenIdConnect@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "82ee244b-3c3d-4b31-8714-f0c667c888ec",
+      "type": "library",
+      "name": "KubernetesClient",
+      "version": "12.1.1",
+      "purl": "pkg:nuget/KubernetesClient@12.1.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "KubernetesClient@12.1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8585f8fe-b772-4809-bc3b-16963394f3c4",
+      "type": "library",
+      "name": "MongoDB.Bson",
+      "version": "2.30.0",
+      "purl": "pkg:nuget/MongoDB.Bson@2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Bson/2.30.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "89c18285-ce0b-42ad-ad2b-ed43f9b0598e",
+      "type": "library",
+      "name": "Snappier",
+      "version": "1.3.1",
+      "purl": "pkg:nuget/Snappier@1.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Snappier/1.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8b51fc6e-39b3-433a-af63-71a746b9d6da",
+      "type": "library",
+      "name": "System.Composition.Runtime",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.Runtime@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.Runtime@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "8c79611b-d87f-45cf-b63c-4c0d033686cc",
+      "type": "library",
+      "name": "Microsoft.NETCore.Platforms",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.NETCore.Platforms@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "906dbaf8-2b59-4931-8965-527b42b2a608",
+      "type": "library",
+      "name": "System.Composition.Hosting",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.Hosting@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.Hosting/6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "92fdb25e-72b7-4b6c-9d26-150b56a6ca37",
+      "type": "library",
+      "name": "ZstdSharp.Port",
+      "version": "0.7.3",
+      "purl": "pkg:nuget/ZstdSharp.Port@0.7.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ZstdSharp.Port@0.7.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "931f215b-aae9-42c9-8673-599d7c46be0f",
+      "type": "application",
+      "name": "Middleware/packages.lock.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9417feb4-514b-4229-b041-6665a1e489e3",
+      "type": "library",
+      "name": "Serilog.Extensions.Hosting",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Serilog.Extensions.Hosting@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Extensions.Hosting/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "94bd699f-db79-4270-b29f-0ef5972c1e92",
+      "type": "library",
+      "name": "System.Memory",
+      "version": "4.5.5",
+      "purl": "pkg:nuget/System.Memory@4.5.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Memory@4.5.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "99c173a4-e655-417b-8a99-8993b7108fae",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Abstractions",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Abstractions@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Abstractions/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "99f7669c-2ee0-4fb9-9689-fbfadff3d9f9",
+      "type": "library",
+      "name": "System.IdentityModel.Tokens.Jwt",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.IdentityModel.Tokens.Jwt/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9a4e1849-bbb6-47af-aeac-5e587448ea7c",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Abstractions",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Abstractions@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Abstractions/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9b50efb1-2b04-48cf-b0aa-1c207cb8e5ae",
+      "type": "library",
+      "name": "System.IdentityModel.Tokens.Jwt",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.IdentityModel.Tokens.Jwt@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9b565ad7-6980-4201-ae21-e75796476244",
+      "type": "library",
+      "name": "ZstdSharp.Port",
+      "version": "0.7.3",
+      "purl": "pkg:nuget/ZstdSharp.Port@0.7.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ZstdSharp.Port/0.7.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9d60e2cc-4b49-42f7-a3b9-d7cb85211a9e",
+      "type": "library",
+      "name": "ZstdSharp.Port",
+      "version": "0.7.3",
+      "purl": "pkg:nuget/ZstdSharp.Port@0.7.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ZstdSharp.Port@0.7.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9db1e32b-0e04-4ed8-8c93-c4d0b2826daa",
+      "type": "library",
+      "name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "version": "8.0.11",
+      "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@8.0.11",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.AspNetCore.Authentication.JwtBearer@8.0.11"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9dbe7592-66e1-4396-add3-fb032320ff99",
+      "type": "library",
+      "name": "SharpCompress",
+      "version": "0.30.1",
+      "purl": "pkg:nuget/SharpCompress@0.30.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "SharpCompress@0.30.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9ded1dd8-2eb0-457c-81d3-133ccc3eb41b",
+      "type": "library",
+      "name": "AWSSDK.Core",
+      "version": "3.7.100.14",
+      "purl": "pkg:nuget/AWSSDK.Core@3.7.100.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AWSSDK.Core/3.7.100.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "9f9ccffd-70e3-4403-86c1-e9ad89d92447",
+      "type": "application",
+      "name": "CatalogMicroservice/bin/Debug/net8.0/CatalogMicroservice.deps.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a01603e9-65b5-49bd-9e34-974a26cf4bf6",
+      "type": "library",
+      "name": "Serilog.Sinks.Debug",
+      "version": "2.0.0",
+      "purl": "pkg:nuget/Serilog.Sinks.Debug@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Sinks.Debug/2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a2215207-3ee8-437d-a3d9-9fbd60d78825",
+      "type": "library",
+      "name": "Microsoft.CodeAnalysis.CSharp.Workspaces",
+      "version": "4.5.0",
+      "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp.Workspaces@4.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.CodeAnalysis.CSharp.Workspaces@4.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a33ddfa0-2330-45a2-b1d0-1409c706b68f",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a3584cf8-37c1-499e-83e8-3402e50892ac",
+      "type": "library",
+      "name": "MongoDB.Libmongocrypt",
+      "version": "1.12.0",
+      "purl": "pkg:nuget/MongoDB.Libmongocrypt@1.12.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Libmongocrypt@1.12.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a417cf7c-b088-40b9-b0dc-f4141e6cf425",
+      "type": "library",
+      "name": "SharpCompress",
+      "version": "0.30.1",
+      "purl": "pkg:nuget/SharpCompress@0.30.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "SharpCompress/0.30.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a4274770-ccdc-4059-ad0a-b5a173948174",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore.Abstractions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Abstractions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore.Abstractions@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a434f0e2-1a38-4693-bc5e-3e06742c86af",
+      "type": "library",
+      "name": "Microsoft.Extensions.Configuration.Abstractions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Abstractions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Configuration.Abstractions@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a52d2ab7-61d7-4c0c-9ac2-db8742af47e2",
+      "type": "library",
+      "name": "AWSSDK.SecurityToken",
+      "version": "3.7.100.14",
+      "purl": "pkg:nuget/AWSSDK.SecurityToken@3.7.100.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AWSSDK.SecurityToken/3.7.100.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a825d73c-4036-4012-9591-bc29296d71fa",
+      "type": "library",
+      "name": "Snappier",
+      "version": "1.3.1",
+      "purl": "pkg:nuget/Snappier@1.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Snappier@1.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a8349758-34dd-45dd-8d6a-b3dc7e660c95",
+      "type": "library",
+      "name": "System.Memory",
+      "version": "4.5.5",
+      "purl": "pkg:nuget/System.Memory@4.5.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Memory@4.5.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "a8b8f6b2-989d-4068-b0fd-de2ed1270f20",
+      "type": "library",
+      "name": "Serilog",
+      "version": "3.1.1",
+      "purl": "pkg:nuget/Serilog@3.1.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog/3.1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "aef26bf4-a765-4490-b277-c2f2cf6ac360",
+      "type": "library",
+      "name": "Fractions",
+      "version": "7.2.1",
+      "purl": "pkg:nuget/Fractions@7.2.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Fractions@7.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "af16c42e-25ed-4081-bc44-6a49f9a8db66",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Protocols.OpenIdConnect",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols.OpenIdConnect@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Protocols.OpenIdConnect/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b2bc3997-9660-4b49-be21-71d335cb1e4e",
+      "type": "library",
+      "name": "System.Security.Principal.Windows",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/System.Security.Principal.Windows@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Security.Principal.Windows@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b3c3145e-0b52-479b-b817-4c321a128806",
+      "type": "library",
+      "name": "DnsClient",
+      "version": "1.6.1",
+      "purl": "pkg:nuget/DnsClient@1.6.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "DnsClient/1.6.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b680de65-f0a3-49aa-9025-4a4c89ca40e7",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore.Design",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Design@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore.Design/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "b9686a5b-2f64-48f5-8acf-a7ad5f8d4bc8",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Protocols",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Protocols@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bcb3b7cf-b091-4fd0-a633-f0e129545361",
+      "type": "library",
+      "name": "Microsoft.Extensions.Primitives",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Primitives@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Primitives@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "be5ae771-0d27-48bb-81d7-0591fded58df",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.JsonWebTokens",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.JsonWebTokens@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.JsonWebTokens@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "beebf68a-a257-4d72-ba3f-ad7458720f4b",
+      "type": "library",
+      "name": "Snappier",
+      "version": "1.3.1",
+      "purl": "pkg:nuget/Snappier@1.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Snappier/1.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "bfe74d80-15cd-4fff-880a-86d774756170",
+      "type": "library",
+      "name": "Microsoft.CodeAnalysis.Common",
+      "version": "4.5.0",
+      "purl": "pkg:nuget/Microsoft.CodeAnalysis.Common@4.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.CodeAnalysis.Common@4.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c89ae04d-ce27-4e53-95fe-cb7f5a9b72d6",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Logging",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Logging/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c95ff896-c04d-4510-b8dd-87454a155951",
+      "type": "library",
+      "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "version": "8.0.2",
+      "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.DependencyInjection.Abstractions@8.0.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "c960c03f-adf8-43d1-8947-21448706b8af",
+      "type": "library",
+      "name": "Microsoft.CodeAnalysis.CSharp",
+      "version": "4.5.0",
+      "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp@4.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.CodeAnalysis.CSharp@4.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "cbbdb065-b8c3-4445-813b-b395d8cd7aae",
+      "type": "library",
+      "name": "System.Composition.Hosting",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.Hosting@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.Hosting@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d25e10dd-09a6-4094-8de0-57a003c38387",
+      "type": "library",
+      "name": "IdentityModel.OidcClient",
+      "version": "5.2.1",
+      "purl": "pkg:nuget/IdentityModel.OidcClient@5.2.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "IdentityModel.OidcClient@5.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d38e72ef-8912-4074-a464-1e12a210f309",
+      "type": "library",
+      "name": "MongoDB.Driver",
+      "version": "2.30.0",
+      "purl": "pkg:nuget/MongoDB.Driver@2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Driver@2.30.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d471f7c1-a1dc-4d2b-a02a-10bcf3525ef2",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Logging",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Logging@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Logging/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d514934f-cdd9-4141-97f1-2dd3678f2970",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Protocols",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Protocols/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d526485b-3d54-4fd1-a7f9-e058d2c4e644",
+      "type": "library",
+      "name": "Mono.TextTemplating",
+      "version": "2.2.1",
+      "purl": "pkg:nuget/Mono.TextTemplating@2.2.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Mono.TextTemplating@2.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d5345300-76e5-4903-894e-cd666b1b221d",
+      "type": "library",
+      "name": "AWSSDK.Core",
+      "version": "3.7.100.14",
+      "purl": "pkg:nuget/AWSSDK.Core@3.7.100.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AWSSDK.Core/3.7.100.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d5578d00-a26c-4cdd-903b-0ca370f9aa15",
+      "type": "library",
+      "name": "Microsoft.Extensions.DependencyInjection.Abstractions",
+      "version": "8.0.2",
+      "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection.Abstractions@8.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.DependencyInjection.Abstractions@8.0.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d5f37136-f9a1-4b26-b671-da04b521dfd6",
+      "type": "library",
+      "name": "MongoDB.Driver.Core",
+      "version": "2.30.0",
+      "purl": "pkg:nuget/MongoDB.Driver.Core@2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Driver.Core/2.30.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d5f771bf-9a12-461c-b453-64da84298d61",
+      "type": "library",
+      "name": "MongoDB.Driver",
+      "version": "2.30.0",
+      "purl": "pkg:nuget/MongoDB.Driver@2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Driver@2.30.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d610db1a-6c75-4e22-b2f8-7b7a3ecfb971",
+      "type": "library",
+      "name": "Microsoft.CodeAnalysis.Common",
+      "version": "4.5.0",
+      "purl": "pkg:nuget/Microsoft.CodeAnalysis.Common@4.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.CodeAnalysis.Common/4.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d782623f-bf6b-4b20-a5f4-2cced419a367",
+      "type": "library",
+      "name": "Serilog.Extensions.Logging",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Serilog.Extensions.Logging@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Extensions.Logging/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "d78410b6-fded-43c0-ba2c-1887b330e997",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "db74952d-26f9-401f-99b0-5d75809e62d1",
+      "type": "library",
+      "name": "Serilog.Formatting.Compact",
+      "version": "2.0.0",
+      "purl": "pkg:nuget/Serilog.Formatting.Compact@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Formatting.Compact/2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dc31327d-dce6-4dba-9d26-f2ff51df75f2",
+      "type": "library",
+      "name": "System.Composition.TypedParts",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.TypedParts@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.TypedParts@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dc5c0398-a41e-4723-83c8-0ad90906234a",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore.InMemory",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.InMemory@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore.InMemory@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "deb47f3a-4dc3-4c3f-98ba-190224faae98",
+      "type": "library",
+      "name": "Microsoft.Extensions.Logging.Abstractions",
+      "version": "8.0.2",
+      "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@8.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Logging.Abstractions/8.0.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "deb924cb-19c1-45f8-878f-c402d6d6c392",
+      "type": "library",
+      "name": "ZstdSharp.Port",
+      "version": "0.7.3",
+      "purl": "pkg:nuget/ZstdSharp.Port@0.7.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "ZstdSharp.Port/0.7.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "df2fb74b-8185-46ae-9adc-19dd1deec411",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore.Relational",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Relational@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore.Relational@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "dfe62a55-9bb3-4ae5-88cb-f615a14e98b1",
+      "type": "library",
+      "name": "Middleware",
+      "version": "1.0.0",
+      "purl": "pkg:nuget/Middleware@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Middleware/1.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e0504acb-ff81-447a-a9a6-aea12f34e5f9",
+      "type": "library",
+      "name": "SharpCompress",
+      "version": "0.30.1",
+      "purl": "pkg:nuget/SharpCompress@0.30.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "SharpCompress@0.30.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e077733d-1c1f-40f9-b4cc-8def0dc4cdd7",
+      "type": "library",
+      "name": "Mono.TextTemplating",
+      "version": "2.2.1",
+      "purl": "pkg:nuget/Mono.TextTemplating@2.2.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Mono.TextTemplating/2.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e0ec8131-ce58-4c9c-9073-66e1db60968f",
+      "type": "library",
+      "name": "AWSSDK.SecurityToken",
+      "version": "3.7.100.14",
+      "purl": "pkg:nuget/AWSSDK.SecurityToken@3.7.100.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AWSSDK.SecurityToken@3.7.100.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e1c10e95-2995-468d-a32a-439ac93dfd6e",
+      "type": "application",
+      "name": "Middleware/bin/Debug/net8.0/Middleware.deps.json",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:Class",
+          "value": "lang-pkgs"
+        },
+        {
+          "name": "aquasecurity:trivy:Type",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e2236aa5-18ae-49cc-ad81-3ce191000d9c",
+      "type": "library",
+      "name": "System.Buffers",
+      "version": "4.5.1",
+      "purl": "pkg:nuget/System.Buffers@4.5.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Buffers@4.5.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e2d3c3b7-6e7a-4c96-9557-6639018b95eb",
+      "type": "library",
+      "name": "System.IdentityModel.Tokens.Jwt",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.IdentityModel.Tokens.Jwt@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e97423bc-01d7-483c-a75b-c237476da6f0",
+      "type": "library",
+      "name": "DnsClient",
+      "version": "1.6.1",
+      "purl": "pkg:nuget/DnsClient@1.6.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "DnsClient@1.6.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "e9d1342e-c2e5-4ca3-8070-a6964f1a468d",
+      "type": "library",
+      "name": "System.Composition.AttributedModel",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.AttributedModel@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.AttributedModel@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "eb731300-5ad7-4bde-871b-89e474be3b81",
+      "type": "library",
+      "name": "System.IdentityModel.Tokens.Jwt",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/System.IdentityModel.Tokens.Jwt@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.IdentityModel.Tokens.Jwt/7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ec2251b2-f001-4e50-9655-087ed74f6d7b",
+      "type": "library",
+      "name": "Humanizer.Core",
+      "version": "2.14.1",
+      "purl": "pkg:nuget/Humanizer.Core@2.14.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Humanizer.Core@2.14.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "ee21a43e-a80c-4f12-a705-a25eb0934309",
+      "type": "library",
+      "name": "AWSSDK.SecurityToken",
+      "version": "3.7.100.14",
+      "purl": "pkg:nuget/AWSSDK.SecurityToken@3.7.100.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AWSSDK.SecurityToken@3.7.100.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f250c763-da08-4487-8630-56350ade87ee",
+      "type": "library",
+      "name": "MongoDB.Driver.Core",
+      "version": "2.30.0",
+      "purl": "pkg:nuget/MongoDB.Driver.Core@2.30.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Driver.Core@2.30.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f2904257-57d2-4ff5-b058-0fb080feb68e",
+      "type": "library",
+      "name": "Serilog",
+      "version": "3.1.1",
+      "purl": "pkg:nuget/Serilog@3.1.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog@3.1.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f30bb026-5e81-48e0-8824-eb56696cbb7d",
+      "type": "library",
+      "name": "Microsoft.IdentityModel.Protocols",
+      "version": "7.1.2",
+      "purl": "pkg:nuget/Microsoft.IdentityModel.Protocols@7.1.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.IdentityModel.Protocols@7.1.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f45b0654-9ad4-4c40-93e4-bcf30ec2950b",
+      "type": "library",
+      "name": "Microsoft.NETCore.Platforms",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/Microsoft.NETCore.Platforms@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.NETCore.Platforms@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f486d53a-5c0c-42d6-a1c8-63e0e010f3cb",
+      "type": "library",
+      "name": "Serilog.Sinks.Console",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/Serilog.Sinks.Console@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Sinks.Console@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f58b5434-2414-401c-b319-227d1e60c272",
+      "type": "library",
+      "name": "System.Composition.Convention",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition.Convention@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition.Convention@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f93d44e2-0cbe-400f-ac6a-70f4444f8593",
+      "type": "library",
+      "name": "YamlDotNet",
+      "version": "13.3.1",
+      "purl": "pkg:nuget/YamlDotNet@13.3.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "YamlDotNet/13.3.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "f9ad58e8-24fb-4611-b2a9-235240dd1f28",
+      "type": "library",
+      "name": "Microsoft.CodeAnalysis.CSharp.Workspaces",
+      "version": "4.5.0",
+      "purl": "pkg:nuget/Microsoft.CodeAnalysis.CSharp.Workspaces@4.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.CodeAnalysis.CSharp.Workspaces/4.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fa843e7c-5bee-4ead-8d12-dc7a529dd7b6",
+      "type": "library",
+      "name": "IdentityModel.OidcClient",
+      "version": "5.2.1",
+      "purl": "pkg:nuget/IdentityModel.OidcClient@5.2.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "IdentityModel.OidcClient/5.2.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "fc519ffd-5801-41a4-b4a3-5674322c762a",
+      "type": "library",
+      "name": "Humanizer.Core",
+      "version": "2.14.1",
+      "purl": "pkg:nuget/Humanizer.Core@2.14.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Humanizer.Core/2.14.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.MongoDb@8.0.0",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.MongoDb",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.MongoDb@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.MongoDb/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.MongoDb@8.0.1",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.MongoDb",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.MongoDb@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.MongoDb@8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Client@8.0.0",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI.Client",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI.Client@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI.Client/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Client@8.0.1",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI.Client",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI.Client@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI.Client@8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.0",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI.Core",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI.Core/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.1",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI.Core",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI.Core@8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.0",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI.Data",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI.Data/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.1",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI.Data",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI.Data@8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI.InMemory.Storage@8.0.0",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI.InMemory.Storage",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI.InMemory.Storage@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI.InMemory.Storage/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI.InMemory.Storage@8.0.1",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI.InMemory.Storage",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI.InMemory.Storage@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI.InMemory.Storage@8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI@8.0.0",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/AspNetCore.HealthChecks.UI@8.0.1",
+      "type": "library",
+      "name": "AspNetCore.HealthChecks.UI",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/AspNetCore.HealthChecks.UI@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "AspNetCore.HealthChecks.UI@8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/CatalogMicroservice@1.0.0",
+      "type": "library",
+      "name": "CatalogMicroservice",
+      "version": "1.0.0",
+      "purl": "pkg:nuget/CatalogMicroservice@1.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "CatalogMicroservice/1.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@8.0.3",
+      "type": "library",
+      "name": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "version": "8.0.3",
+      "purl": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@8.0.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.AspNetCore.Authentication.JwtBearer/8.0.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@3.3.3",
+      "type": "library",
+      "name": "Microsoft.CodeAnalysis.Analyzers",
+      "version": "3.3.3",
+      "purl": "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@3.3.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.CodeAnalysis.Analyzers@3.3.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.EntityFrameworkCore.Analyzers@8.0.0",
+      "type": "library",
+      "name": "Microsoft.EntityFrameworkCore.Analyzers",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.EntityFrameworkCore.Analyzers@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.EntityFrameworkCore.Analyzers@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.ApiDescription.Server@6.0.5",
+      "type": "library",
+      "name": "Microsoft.Extensions.ApiDescription.Server",
+      "version": "6.0.5",
+      "purl": "pkg:nuget/Microsoft.Extensions.ApiDescription.Server@6.0.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.ApiDescription.Server@6.0.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Caching.Abstractions@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Caching.Abstractions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Caching.Abstractions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Caching.Abstractions@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Configuration.Binder",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Configuration.Binder@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Configuration@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Configuration",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Configuration@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Configuration@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.DependencyInjection@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.DependencyInjection",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.DependencyInjection@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.DependencyInjection@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.DependencyModel",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.DependencyModel/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.2",
+      "type": "library",
+      "name": "Microsoft.Extensions.DependencyModel",
+      "version": "8.0.2",
+      "purl": "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.DependencyModel@8.0.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Diagnostics.Abstractions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Diagnostics.Abstractions@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Diagnostics.HealthChecks",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Diagnostics@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Diagnostics",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Diagnostics@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Diagnostics@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.FileProviders.Abstractions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.FileProviders.Abstractions@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Hosting.Abstractions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Hosting.Abstractions@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Http@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Http",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Http@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Http@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Logging.Abstractions",
+      "version": "2.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Logging.Abstractions@2.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Logging@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Logging",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Logging@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Logging@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.ObjectPool@7.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.ObjectPool",
+      "version": "7.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.ObjectPool@7.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.ObjectPool@7.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@8.0.0",
+      "type": "library",
+      "name": "Microsoft.Extensions.Options.ConfigurationExtensions",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.Extensions.Options.ConfigurationExtensions@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.OpenApi@1.2.3",
+      "type": "library",
+      "name": "Microsoft.OpenApi",
+      "version": "1.2.3",
+      "purl": "pkg:nuget/Microsoft.OpenApi@1.2.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.OpenApi/1.2.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.OpenApi@1.6.14",
+      "type": "library",
+      "name": "Microsoft.OpenApi",
+      "version": "1.6.14",
+      "purl": "pkg:nuget/Microsoft.OpenApi@1.6.14",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.OpenApi@1.6.14"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Microsoft.VisualStudio.Azure.Containers.Tools.Targets@1.21.0",
+      "type": "library",
+      "name": "Microsoft.VisualStudio.Azure.Containers.Tools.Targets",
+      "version": "1.21.0",
+      "purl": "pkg:nuget/Microsoft.VisualStudio.Azure.Containers.Tools.Targets@1.21.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Microsoft.VisualStudio.Azure.Containers.Tools.Targets@1.21.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/MongoDB.Bson@2.24.0",
+      "type": "library",
+      "name": "MongoDB.Bson",
+      "version": "2.24.0",
+      "purl": "pkg:nuget/MongoDB.Bson@2.24.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Bson/2.24.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/MongoDB.Driver.Core@2.24.0",
+      "type": "library",
+      "name": "MongoDB.Driver.Core",
+      "version": "2.24.0",
+      "purl": "pkg:nuget/MongoDB.Driver.Core@2.24.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Driver.Core/2.24.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/MongoDB.Driver@2.24.0",
+      "type": "library",
+      "name": "MongoDB.Driver",
+      "version": "2.24.0",
+      "purl": "pkg:nuget/MongoDB.Driver@2.24.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Driver/2.24.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/MongoDB.Libmongocrypt@1.8.2",
+      "type": "library",
+      "name": "MongoDB.Libmongocrypt",
+      "version": "1.8.2",
+      "purl": "pkg:nuget/MongoDB.Libmongocrypt@1.8.2",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "MongoDB.Libmongocrypt/1.8.2"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Serilog.AspNetCore@8.0.1",
+      "type": "library",
+      "name": "Serilog.AspNetCore",
+      "version": "8.0.1",
+      "purl": "pkg:nuget/Serilog.AspNetCore@8.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.AspNetCore/8.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Serilog.AspNetCore@8.0.3",
+      "type": "library",
+      "name": "Serilog.AspNetCore",
+      "version": "8.0.3",
+      "purl": "pkg:nuget/Serilog.AspNetCore@8.0.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.AspNetCore@8.0.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Serilog.Settings.Configuration@8.0.0",
+      "type": "library",
+      "name": "Serilog.Settings.Configuration",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/Serilog.Settings.Configuration@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Settings.Configuration/8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Serilog.Settings.Configuration@8.0.4",
+      "type": "library",
+      "name": "Serilog.Settings.Configuration",
+      "version": "8.0.4",
+      "purl": "pkg:nuget/Serilog.Settings.Configuration@8.0.4",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Serilog.Settings.Configuration@8.0.4"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.5.0",
+      "type": "library",
+      "name": "Swashbuckle.AspNetCore.Swagger",
+      "version": "6.5.0",
+      "purl": "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Swashbuckle.AspNetCore.Swagger/6.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.9.0",
+      "type": "library",
+      "name": "Swashbuckle.AspNetCore.Swagger",
+      "version": "6.9.0",
+      "purl": "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.9.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Swashbuckle.AspNetCore.Swagger@6.9.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerGen@6.5.0",
+      "type": "library",
+      "name": "Swashbuckle.AspNetCore.SwaggerGen",
+      "version": "6.5.0",
+      "purl": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerGen@6.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Swashbuckle.AspNetCore.SwaggerGen/6.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerGen@6.9.0",
+      "type": "library",
+      "name": "Swashbuckle.AspNetCore.SwaggerGen",
+      "version": "6.9.0",
+      "purl": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerGen@6.9.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Swashbuckle.AspNetCore.SwaggerGen@6.9.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.5.0",
+      "type": "library",
+      "name": "Swashbuckle.AspNetCore.SwaggerUI",
+      "version": "6.5.0",
+      "purl": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.5.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Swashbuckle.AspNetCore.SwaggerUI/6.5.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "dotnet-core"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.9.0",
+      "type": "library",
+      "name": "Swashbuckle.AspNetCore.SwaggerUI",
+      "version": "6.9.0",
+      "purl": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.9.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Swashbuckle.AspNetCore.SwaggerUI@6.9.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/Swashbuckle.AspNetCore@6.9.0",
+      "type": "library",
+      "name": "Swashbuckle.AspNetCore",
+      "version": "6.9.0",
+      "purl": "pkg:nuget/Swashbuckle.AspNetCore@6.9.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "Swashbuckle.AspNetCore@6.9.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.Collections.Immutable@6.0.0",
+      "type": "library",
+      "name": "System.Collections.Immutable",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Collections.Immutable@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Collections.Immutable@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.Composition@6.0.0",
+      "type": "library",
+      "name": "System.Composition",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Composition@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Composition@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.Diagnostics.DiagnosticSource@8.0.0",
+      "type": "library",
+      "name": "System.Diagnostics.DiagnosticSource",
+      "version": "8.0.0",
+      "purl": "pkg:nuget/System.Diagnostics.DiagnosticSource@8.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Diagnostics.DiagnosticSource@8.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.IO.Pipelines@6.0.3",
+      "type": "library",
+      "name": "System.IO.Pipelines",
+      "version": "6.0.3",
+      "purl": "pkg:nuget/System.IO.Pipelines@6.0.3",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.IO.Pipelines@6.0.3"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.Reflection.Metadata@6.0.1",
+      "type": "library",
+      "name": "System.Reflection.Metadata",
+      "version": "6.0.1",
+      "purl": "pkg:nuget/System.Reflection.Metadata@6.0.1",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Reflection.Metadata@6.0.1"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@5.0.0",
+      "type": "library",
+      "name": "System.Runtime.CompilerServices.Unsafe",
+      "version": "5.0.0",
+      "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@5.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Runtime.CompilerServices.Unsafe@5.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+      "type": "library",
+      "name": "System.Runtime.CompilerServices.Unsafe",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Runtime.CompilerServices.Unsafe@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.Text.Encoding.CodePages@6.0.0",
+      "type": "library",
+      "name": "System.Text.Encoding.CodePages",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Text.Encoding.CodePages@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Text.Encoding.CodePages@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.Text.Json@8.0.5",
+      "type": "library",
+      "name": "System.Text.Json",
+      "version": "8.0.5",
+      "purl": "pkg:nuget/System.Text.Json@8.0.5",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Text.Json@8.0.5"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    },
+    {
+      "bom-ref": "pkg:nuget/System.Threading.Channels@6.0.0",
+      "type": "library",
+      "name": "System.Threading.Channels",
+      "version": "6.0.0",
+      "purl": "pkg:nuget/System.Threading.Channels@6.0.0",
+      "properties": [
+        {
+          "name": "aquasecurity:trivy:PkgID",
+          "value": "System.Threading.Channels@6.0.0"
+        },
+        {
+          "name": "aquasecurity:trivy:PkgType",
+          "value": "nuget"
+        }
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "013ac7b3-c289-4273-ab7c-b62a06126c4d",
+      "dependsOn": [
+        "d78410b6-fded-43c0-ba2c-1887b330e997"
+      ]
+    },
+    {
+      "ref": "01c233cf-66f2-4fae-a579-6fc9c3af166c",
+      "dependsOn": [
+        "5332ac10-b321-49b8-9486-2723552cb470",
+        "b2bc3997-9660-4b49-be21-71d335cb1e4e"
+      ]
+    },
+    {
+      "ref": "02a8d785-9fdf-4815-a3f0-6323ebc9126a",
+      "dependsOn": []
+    },
+    {
+      "ref": "03fad9c6-6de3-4f39-b944-47301ec2027d",
+      "dependsOn": [
+        "a8b8f6b2-989d-4068-b0fd-de2ed1270f20"
+      ]
+    },
+    {
+      "ref": "079db34f-1a27-46c3-961d-748b5edf9f99",
+      "dependsOn": []
+    },
+    {
+      "ref": "0abc2e2a-a0df-4bcf-9f5b-66e882ba125c",
+      "dependsOn": []
+    },
+    {
+      "ref": "0c80522f-4a29-4a05-93d1-d633a1b85ba1",
+      "dependsOn": []
+    },
+    {
+      "ref": "12f385b7-383f-4a5d-a359-6998a481cb9c",
+      "dependsOn": [
+        "32f449c2-0b61-4552-8bd2-3793b001c0a5",
+        "d471f7c1-a1dc-4d2b-a02a-10bcf3525ef2"
+      ]
+    },
+    {
+      "ref": "13000322-97d7-46e6-b2e2-f09ba42384a6",
+      "dependsOn": [
+        "38e6cf1a-943f-417f-8962-db6bcf153fa6",
+        "beebf68a-a257-4d72-ba3f-ad7458720f4b",
+        "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@8.0.3",
+        "pkg:nuget/MongoDB.Driver@2.24.0"
+      ]
+    },
+    {
+      "ref": "13e87607-db2c-4048-bda2-4114ac4ea927",
+      "dependsOn": [
+        "01c233cf-66f2-4fae-a579-6fc9c3af166c"
+      ]
+    },
+    {
+      "ref": "15b728c7-abd4-429c-b2d8-2a3621019422",
+      "dependsOn": []
+    },
+    {
+      "ref": "17b3b3bc-1576-4035-8221-7182ef149220",
+      "dependsOn": [
+        "72f76a34-7e73-4033-a6d4-12ef7994e1ec",
+        "d610db1a-6c75-4e22-b2f8-7b7a3ecfb971",
+        "fc519ffd-5801-41a4-b4a3-5674322c762a"
+      ]
+    },
+    {
+      "ref": "1b182b0a-5925-4fa2-b6a7-c5c4ab2e1b38",
+      "dependsOn": []
+    },
+    {
+      "ref": "1c3bf9f3-afc2-438e-b7d4-9e8c38142cd5",
+      "dependsOn": []
+    },
+    {
+      "ref": "1cf14772-f3f3-4200-80e4-b94bb5c4e00f",
+      "dependsOn": [
+        "f2904257-57d2-4ff5-b058-0fb080feb68e"
+      ]
+    },
+    {
+      "ref": "1dc3b201-be02-41b8-9c2e-3ff078736130",
+      "dependsOn": [
+        "5f05b7c4-ca27-4f9d-89b0-af0a01a00545",
+        "f45b0654-9ad4-4c40-93e4-bcf30ec2950b"
+      ]
+    },
+    {
+      "ref": "209c0b4d-233d-4b30-931d-081c49d3586f",
+      "dependsOn": [
+        "38e6cf1a-943f-417f-8962-db6bcf153fa6"
+      ]
+    },
+    {
+      "ref": "2401696e-78f6-41a5-ac8f-037225fa21fe",
+      "dependsOn": []
+    },
+    {
+      "ref": "260aa8eb-d8f2-4ead-93df-7ed64a3eab6f",
+      "dependsOn": [
+        "4a6273f6-b2c9-4d79-9e47-a6afde9a54aa"
+      ]
+    },
+    {
+      "ref": "26a33beb-03fc-4146-ba98-36769ba10f2a",
+      "dependsOn": [
+        "c95ff896-c04d-4510-b8dd-87454a155951"
+      ]
+    },
+    {
+      "ref": "29179f9b-bc93-40a7-b081-d966bb0a68e4",
+      "dependsOn": []
+    },
+    {
+      "ref": "291e2350-6061-4124-8b62-9edd15207091",
+      "dependsOn": [
+        "d610db1a-6c75-4e22-b2f8-7b7a3ecfb971"
+      ]
+    },
+    {
+      "ref": "2f97bef8-7e42-4c1b-b2ee-d793489e5d2c",
+      "dependsOn": [
+        "3d1cdf4a-d25a-4fb6-adbf-12b6cecbff9a",
+        "c95ff896-c04d-4510-b8dd-87454a155951"
+      ]
+    },
+    {
+      "ref": "32f449c2-0b61-4552-8bd2-3793b001c0a5",
+      "dependsOn": [
+        "d471f7c1-a1dc-4d2b-a02a-10bcf3525ef2"
+      ]
+    },
+    {
+      "ref": "3499951e-450a-4c8a-a4be-0146c1607a12",
+      "dependsOn": [
+        "pkg:nuget/Microsoft.Extensions.Http@8.0.0",
+        "pkg:nuget/Microsoft.Extensions.ObjectPool@7.0.0"
+      ]
+    },
+    {
+      "ref": "35e8462b-6622-4bca-8a92-efad8c8d2405",
+      "dependsOn": []
+    },
+    {
+      "ref": "361e63d4-e4af-4d46-847f-fad12240d7bf",
+      "dependsOn": [
+        "55a54005-0620-4722-b91d-9e11d41a822b"
+      ]
+    },
+    {
+      "ref": "3648d70a-d766-4f54-ac12-1ccce69d0a1f",
+      "dependsOn": [
+        "9ded1dd8-2eb0-457c-81d3-133ccc3eb41b"
+      ]
+    },
+    {
+      "ref": "378ed558-9ed4-47d3-88a3-80758b29de3a",
+      "dependsOn": []
+    },
+    {
+      "ref": "37e7bf27-ac9c-4977-8767-364dde756cd0",
+      "dependsOn": []
+    },
+    {
+      "ref": "38e6cf1a-943f-417f-8962-db6bcf153fa6",
+      "dependsOn": []
+    },
+    {
+      "ref": "38fa15eb-5c31-4fc1-9283-3f0a00926863",
+      "dependsOn": []
+    },
+    {
+      "ref": "3a091209-933d-441d-8939-60dbd464ddc4",
+      "dependsOn": [
+        "1dc3b201-be02-41b8-9c2e-3ff078736130",
+        "5f05b7c4-ca27-4f9d-89b0-af0a01a00545"
+      ]
+    },
+    {
+      "ref": "3d1cdf4a-d25a-4fb6-adbf-12b6cecbff9a",
+      "dependsOn": []
+    },
+    {
+      "ref": "3e6ba31d-c9aa-41a0-9227-dfad85a9b6ef",
+      "dependsOn": [
+        "32f449c2-0b61-4552-8bd2-3793b001c0a5"
+      ]
+    },
+    {
+      "ref": "3f084158-cad9-44fe-b330-30e1a8231db8",
+      "dependsOn": [
+        "209c0b4d-233d-4b30-931d-081c49d3586f",
+        "38e6cf1a-943f-417f-8962-db6bcf153fa6",
+        "deb47f3a-4dc3-4c3f-98ba-190224faae98"
+      ]
+    },
+    {
+      "ref": "431a4a25-6f9c-4917-affa-8c820eb23fa7",
+      "dependsOn": [
+        "4c4d1e80-2f86-4cad-a790-608bcde9e5d1",
+        "71bb0922-1861-4ed6-96e4-2cdad9d5206a",
+        "906dbaf8-2b59-4931-8965-527b42b2a608"
+      ]
+    },
+    {
+      "ref": "43db78ec-2880-448b-a352-56ae66327e0e",
+      "dependsOn": []
+    },
+    {
+      "ref": "44a5356e-9b17-4f9d-baf6-aefd0ffc1185",
+      "dependsOn": []
+    },
+    {
+      "ref": "44b42885-358c-4c34-bbbf-33b203e87779",
+      "dependsOn": []
+    },
+    {
+      "ref": "44d48d29-73c3-4e78-bd51-cd0273d30b5b",
+      "dependsOn": [
+        "13e87607-db2c-4048-bda2-4114ac4ea927",
+        "60ddcb6b-dbb1-4ab4-b63a-a0d804752581",
+        "6422b25f-8203-4801-bfe2-fc0deea23232",
+        "9d60e2cc-4b49-42f7-a3b9-d7cb85211a9e",
+        "9dbe7592-66e1-4396-add3-fb032320ff99",
+        "a825d73c-4036-4012-9591-bc29296d71fa",
+        "e0ec8131-ce58-4c9c-9073-66e1db60968f",
+        "e2236aa5-18ae-49cc-ad81-3ce191000d9c",
+        "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.0.0"
+      ]
+    },
+    {
+      "ref": "45d282e9-5d62-4045-9128-df4729a2d1e7",
+      "dependsOn": [
+        "a8b8f6b2-989d-4068-b0fd-de2ed1270f20"
+      ]
+    },
+    {
+      "ref": "480c5fa8-f7e8-4ba2-942b-50e2e167e134",
+      "dependsOn": [
+        "af16c42e-25ed-4081-bc44-6a49f9a8db66"
+      ]
+    },
+    {
+      "ref": "4a6273f6-b2c9-4d79-9e47-a6afde9a54aa",
+      "dependsOn": [
+        "9b50efb1-2b04-48cf-b0aa-1c207cb8e5ae",
+        "b9686a5b-2f64-48f5-8acf-a7ad5f8d4bc8"
+      ]
+    },
+    {
+      "ref": "4bdd4e27-f09a-42f2-968e-689c8a2c17e9",
+      "dependsOn": [
+        "525dcc51-667d-4ed7-a0db-87fe0d782f62"
+      ]
+    },
+    {
+      "ref": "4c4d1e80-2f86-4cad-a790-608bcde9e5d1",
+      "dependsOn": []
+    },
+    {
+      "ref": "4d3efead-3906-4f8b-9d2b-0f85681b5e29",
+      "dependsOn": [
+        "43db78ec-2880-448b-a352-56ae66327e0e",
+        "8585f8fe-b772-4809-bc3b-16963394f3c4",
+        "d5f37136-f9a1-4b26-b671-da04b521dfd6"
+      ]
+    },
+    {
+      "ref": "4fa6d000-789d-4737-9de3-47eef0de1edf",
+      "dependsOn": [
+        "5cc16979-dcd7-4b7d-a022-5e234bf9481a"
+      ]
+    },
+    {
+      "ref": "501833ae-43f9-4539-bcfa-b2dc0d2d6000",
+      "dependsOn": [
+        "5126da74-39fe-46a7-936f-780cb0b3cbb5",
+        "bfe74d80-15cd-4fff-880a-86d774756170",
+        "ec2251b2-f001-4e50-9655-087ed74f6d7b",
+        "pkg:nuget/System.Composition@6.0.0",
+        "pkg:nuget/System.IO.Pipelines@6.0.3",
+        "pkg:nuget/System.Threading.Channels@6.0.0"
+      ]
+    },
+    {
+      "ref": "5126da74-39fe-46a7-936f-780cb0b3cbb5",
+      "dependsOn": []
+    },
+    {
+      "ref": "51d7d594-bd91-4f6b-a82e-4a0863db5618",
+      "dependsOn": [
+        "99f7669c-2ee0-4fb9-9689-fbfadff3d9f9",
+        "d514934f-cdd9-4141-97f1-2dd3678f2970"
+      ]
+    },
+    {
+      "ref": "525dcc51-667d-4ed7-a0db-87fe0d782f62",
+      "dependsOn": [
+        "c89ae04d-ce27-4e53-95fe-cb7f5a9b72d6"
+      ]
+    },
+    {
+      "ref": "5332ac10-b321-49b8-9486-2723552cb470",
+      "dependsOn": [
+        "8c79611b-d87f-45cf-b63c-4c0d033686cc",
+        "b2bc3997-9660-4b49-be21-71d335cb1e4e"
+      ]
+    },
+    {
+      "ref": "536e640e-ac4f-4e23-8794-d29f6272a15f",
+      "dependsOn": [
+        "725baa9e-e186-430e-bc87-5f884b0a0e20"
+      ]
+    },
+    {
+      "ref": "552aad2e-e478-404b-bb7c-8593b55da4cc",
+      "dependsOn": [
+        "775666b2-0e19-4d38-807d-46e12be9a7f2",
+        "931f215b-aae9-42c9-8673-599d7c46be0f",
+        "9f9ccffd-70e3-4403-86c1-e9ad89d92447",
+        "e1c10e95-2995-468d-a32a-439ac93dfd6e"
+      ]
+    },
+    {
+      "ref": "55a54005-0620-4722-b91d-9e11d41a822b",
+      "dependsOn": []
+    },
+    {
+      "ref": "58656c5d-3c2a-417d-ac24-5573fe3dd227",
+      "dependsOn": [
+        "a2215207-3ee8-437d-a3d9-9fbd60d78825",
+        "d526485b-3d54-4fd1-a7f9-e058d2c4e644",
+        "df2fb74b-8185-46ae-9adc-19dd1deec411",
+        "ec2251b2-f001-4e50-9655-087ed74f6d7b",
+        "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.2"
+      ]
+    },
+    {
+      "ref": "5891264e-38c2-42df-a6c9-8c208e61fc40",
+      "dependsOn": [
+        "d78410b6-fded-43c0-ba2c-1887b330e997"
+      ]
+    },
+    {
+      "ref": "5cc16979-dcd7-4b7d-a022-5e234bf9481a",
+      "dependsOn": [
+        "079db34f-1a27-46c3-961d-748b5edf9f99"
+      ]
+    },
+    {
+      "ref": "5d9d8051-e8f0-43b8-ab7f-a232ca7c48ce",
+      "dependsOn": [
+        "26a33beb-03fc-4146-ba98-36769ba10f2a",
+        "2f97bef8-7e42-4c1b-b2ee-d793489e5d2c",
+        "3d1cdf4a-d25a-4fb6-adbf-12b6cecbff9a",
+        "c95ff896-c04d-4510-b8dd-87454a155951",
+        "pkg:nuget/Microsoft.Extensions.Caching.Abstractions@8.0.0"
+      ]
+    },
+    {
+      "ref": "5e146f26-6208-4e48-873e-b23eba80b913",
+      "dependsOn": [
+        "0abc2e2a-a0df-4bcf-9f5b-66e882ba125c",
+        "0c80522f-4a29-4a05-93d1-d633a1b85ba1",
+        "99f7669c-2ee0-4fb9-9689-fbfadff3d9f9",
+        "f93d44e2-0cbe-400f-ac6a-70f4444f8593",
+        "fa843e7c-5bee-4ead-8d12-dc7a529dd7b6"
+      ]
+    },
+    {
+      "ref": "5f05b7c4-ca27-4f9d-89b0-af0a01a00545",
+      "dependsOn": []
+    },
+    {
+      "ref": "601f1570-331e-4cb2-b644-29f01dede84c",
+      "dependsOn": [
+        "26a33beb-03fc-4146-ba98-36769ba10f2a",
+        "7ca35caf-1ad9-4b73-9f83-00a10ffa4fcb",
+        "c95ff896-c04d-4510-b8dd-87454a155951",
+        "f2904257-57d2-4ff5-b058-0fb080feb68e",
+        "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0"
+      ]
+    },
+    {
+      "ref": "60ddcb6b-dbb1-4ab4-b63a-a0d804752581",
+      "dependsOn": []
+    },
+    {
+      "ref": "62b6f746-a09a-40fd-bcf2-9a1a6aa72591",
+      "dependsOn": [
+        "f2904257-57d2-4ff5-b058-0fb080feb68e"
+      ]
+    },
+    {
+      "ref": "62cf5234-7af1-42cd-abc4-684192aa9d78",
+      "dependsOn": []
+    },
+    {
+      "ref": "6422b25f-8203-4801-bfe2-fc0deea23232",
+      "dependsOn": [
+        "a8349758-34dd-45dd-8d6a-b3dc7e660c95",
+        "pkg:nuget/System.Runtime.CompilerServices.Unsafe@5.0.0"
+      ]
+    },
+    {
+      "ref": "6c822854-f0ee-488e-93da-7362422e8749",
+      "dependsOn": [
+        "94bd699f-db79-4270-b29f-0ef5972c1e92",
+        "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0"
+      ]
+    },
+    {
+      "ref": "71bb0922-1861-4ed6-96e4-2cdad9d5206a",
+      "dependsOn": []
+    },
+    {
+      "ref": "725baa9e-e186-430e-bc87-5f884b0a0e20",
+      "dependsOn": [
+        "361e63d4-e4af-4d46-847f-fad12240d7bf"
+      ]
+    },
+    {
+      "ref": "72f76a34-7e73-4033-a6d4-12ef7994e1ec",
+      "dependsOn": []
+    },
+    {
+      "ref": "775666b2-0e19-4d38-807d-46e12be9a7f2",
+      "dependsOn": [
+        "35e8462b-6622-4bca-8a92-efad8c8d2405",
+        "5d9d8051-e8f0-43b8-ab7f-a232ca7c48ce",
+        "9db1e32b-0e04-4ed8-8c93-c4d0b2826daa",
+        "d5f771bf-9a12-461c-b453-64da84298d61",
+        "pkg:nuget/AspNetCore.HealthChecks.MongoDb@8.0.1",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Client@8.0.1",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.InMemory.Storage@8.0.1",
+        "pkg:nuget/AspNetCore.HealthChecks.UI@8.0.1",
+        "pkg:nuget/Microsoft.VisualStudio.Azure.Containers.Tools.Targets@1.21.0",
+        "pkg:nuget/Serilog.AspNetCore@8.0.3",
+        "pkg:nuget/Swashbuckle.AspNetCore@6.9.0",
+        "pkg:nuget/System.Text.Json@8.0.5"
+      ]
+    },
+    {
+      "ref": "790a1ed0-0eaf-4271-ba7b-dbc04e677074",
+      "dependsOn": [
+        "f2904257-57d2-4ff5-b058-0fb080feb68e"
+      ]
+    },
+    {
+      "ref": "79ac4d34-38bc-483e-a7aa-e9f3cd5b2a05",
+      "dependsOn": [
+        "4c4d1e80-2f86-4cad-a790-608bcde9e5d1"
+      ]
+    },
+    {
+      "ref": "7ca35caf-1ad9-4b73-9f83-00a10ffa4fcb",
+      "dependsOn": [
+        "f2904257-57d2-4ff5-b058-0fb080feb68e",
+        "pkg:nuget/Microsoft.Extensions.Logging@8.0.0"
+      ]
+    },
+    {
+      "ref": "7e7aa87e-ef79-410b-b24a-bfaf0fce5a9f",
+      "dependsOn": [
+        "3d1cdf4a-d25a-4fb6-adbf-12b6cecbff9a"
+      ]
+    },
+    {
+      "ref": "801a522f-c42b-4956-a5dc-f585899a6c65",
+      "dependsOn": [
+        "e2d3c3b7-6e7a-4c96-9557-6639018b95eb",
+        "f30bb026-5e81-48e0-8824-eb56696cbb7d"
+      ]
+    },
+    {
+      "ref": "82ee244b-3c3d-4b31-8714-f0c667c888ec",
+      "dependsOn": [
+        "3499951e-450a-4c8a-a4be-0146c1607a12",
+        "62cf5234-7af1-42cd-abc4-684192aa9d78",
+        "aef26bf4-a765-4490-b277-c2f2cf6ac360",
+        "d25e10dd-09a6-4094-8de0-57a003c38387",
+        "e2d3c3b7-6e7a-4c96-9557-6639018b95eb"
+      ]
+    },
+    {
+      "ref": "8585f8fe-b772-4809-bc3b-16963394f3c4",
+      "dependsOn": []
+    },
+    {
+      "ref": "89c18285-ce0b-42ad-ad2b-ed43f9b0598e",
+      "dependsOn": []
+    },
+    {
+      "ref": "8b51fc6e-39b3-433a-af63-71a746b9d6da",
+      "dependsOn": []
+    },
+    {
+      "ref": "8c79611b-d87f-45cf-b63c-4c0d033686cc",
+      "dependsOn": []
+    },
+    {
+      "ref": "906dbaf8-2b59-4931-8965-527b42b2a608",
+      "dependsOn": [
+        "71bb0922-1861-4ed6-96e4-2cdad9d5206a"
+      ]
+    },
+    {
+      "ref": "92fdb25e-72b7-4b6c-9d26-150b56a6ca37",
+      "dependsOn": []
+    },
+    {
+      "ref": "931f215b-aae9-42c9-8673-599d7c46be0f",
+      "dependsOn": [
+        "260aa8eb-d8f2-4ead-93df-7ed64a3eab6f",
+        "a434f0e2-1a38-4693-bc5e-3e06742c86af",
+        "a825d73c-4036-4012-9591-bc29296d71fa",
+        "d38e72ef-8912-4074-a464-1e12a210f309",
+        "d5578d00-a26c-4cdd-903b-0ca370f9aa15"
+      ]
+    },
+    {
+      "ref": "9417feb4-514b-4229-b041-6665a1e489e3",
+      "dependsOn": [
+        "38e6cf1a-943f-417f-8962-db6bcf153fa6",
+        "a8b8f6b2-989d-4068-b0fd-de2ed1270f20",
+        "d782623f-bf6b-4b20-a5f4-2cced419a367",
+        "deb47f3a-4dc3-4c3f-98ba-190224faae98"
+      ]
+    },
+    {
+      "ref": "94bd699f-db79-4270-b29f-0ef5972c1e92",
+      "dependsOn": []
+    },
+    {
+      "ref": "99c173a4-e655-417b-8a99-8993b7108fae",
+      "dependsOn": []
+    },
+    {
+      "ref": "99f7669c-2ee0-4fb9-9689-fbfadff3d9f9",
+      "dependsOn": [
+        "4bdd4e27-f09a-42f2-968e-689c8a2c17e9",
+        "525dcc51-667d-4ed7-a0db-87fe0d782f62"
+      ]
+    },
+    {
+      "ref": "9a4e1849-bbb6-47af-aeac-5e587448ea7c",
+      "dependsOn": []
+    },
+    {
+      "ref": "9b50efb1-2b04-48cf-b0aa-1c207cb8e5ae",
+      "dependsOn": [
+        "536e640e-ac4f-4e23-8794-d29f6272a15f",
+        "725baa9e-e186-430e-bc87-5f884b0a0e20"
+      ]
+    },
+    {
+      "ref": "9b565ad7-6980-4201-ae21-e75796476244",
+      "dependsOn": []
+    },
+    {
+      "ref": "9d60e2cc-4b49-42f7-a3b9-d7cb85211a9e",
+      "dependsOn": []
+    },
+    {
+      "ref": "9db1e32b-0e04-4ed8-8c93-c4d0b2826daa",
+      "dependsOn": [
+        "801a522f-c42b-4956-a5dc-f585899a6c65"
+      ]
+    },
+    {
+      "ref": "9dbe7592-66e1-4396-add3-fb032320ff99",
+      "dependsOn": []
+    },
+    {
+      "ref": "9ded1dd8-2eb0-457c-81d3-133ccc3eb41b",
+      "dependsOn": []
+    },
+    {
+      "ref": "9f9ccffd-70e3-4403-86c1-e9ad89d92447",
+      "dependsOn": [
+        "431a4a25-6f9c-4917-affa-8c820eb23fa7",
+        "79ac4d34-38bc-483e-a7aa-e9f3cd5b2a05",
+        "pkg:nuget/CatalogMicroservice@1.0.0",
+        "pkg:nuget/Swashbuckle.AspNetCore.SwaggerGen@6.5.0",
+        "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.5.0"
+      ]
+    },
+    {
+      "ref": "a01603e9-65b5-49bd-9e34-974a26cf4bf6",
+      "dependsOn": [
+        "a8b8f6b2-989d-4068-b0fd-de2ed1270f20"
+      ]
+    },
+    {
+      "ref": "a2215207-3ee8-437d-a3d9-9fbd60d78825",
+      "dependsOn": [
+        "501833ae-43f9-4539-bcfa-b2dc0d2d6000",
+        "bfe74d80-15cd-4fff-880a-86d774756170",
+        "c960c03f-adf8-43d1-8947-21448706b8af",
+        "ec2251b2-f001-4e50-9655-087ed74f6d7b"
+      ]
+    },
+    {
+      "ref": "a33ddfa0-2330-45a2-b1d0-1409c706b68f",
+      "dependsOn": [
+        "5d9d8051-e8f0-43b8-ab7f-a232ca7c48ce",
+        "a4274770-ccdc-4059-ad0a-b5a173948174",
+        "pkg:nuget/Microsoft.EntityFrameworkCore.Analyzers@8.0.0",
+        "pkg:nuget/Microsoft.Extensions.Logging@8.0.0"
+      ]
+    },
+    {
+      "ref": "a3584cf8-37c1-499e-83e8-3402e50892ac",
+      "dependsOn": []
+    },
+    {
+      "ref": "a417cf7c-b088-40b9-b0dc-f4141e6cf425",
+      "dependsOn": []
+    },
+    {
+      "ref": "a4274770-ccdc-4059-ad0a-b5a173948174",
+      "dependsOn": []
+    },
+    {
+      "ref": "a434f0e2-1a38-4693-bc5e-3e06742c86af",
+      "dependsOn": [
+        "bcb3b7cf-b091-4fd0-a633-f0e129545361"
+      ]
+    },
+    {
+      "ref": "a52d2ab7-61d7-4c0c-9ac2-db8742af47e2",
+      "dependsOn": [
+        "d5345300-76e5-4903-894e-cd666b1b221d"
+      ]
+    },
+    {
+      "ref": "a825d73c-4036-4012-9591-bc29296d71fa",
+      "dependsOn": []
+    },
+    {
+      "ref": "a8349758-34dd-45dd-8d6a-b3dc7e660c95",
+      "dependsOn": []
+    },
+    {
+      "ref": "a8b8f6b2-989d-4068-b0fd-de2ed1270f20",
+      "dependsOn": []
+    },
+    {
+      "ref": "aef26bf4-a765-4490-b277-c2f2cf6ac360",
+      "dependsOn": []
+    },
+    {
+      "ref": "af16c42e-25ed-4081-bc44-6a49f9a8db66",
+      "dependsOn": [
+        "12f385b7-383f-4a5d-a359-6998a481cb9c",
+        "eb731300-5ad7-4bde-871b-89e474be3b81"
+      ]
+    },
+    {
+      "ref": "b2bc3997-9660-4b49-be21-71d335cb1e4e",
+      "dependsOn": []
+    },
+    {
+      "ref": "b3c3145e-0b52-479b-b817-4c321a128806",
+      "dependsOn": []
+    },
+    {
+      "ref": "b680de65-f0a3-49aa-9025-4a4c89ca40e7",
+      "dependsOn": [
+        "5891264e-38c2-42df-a6c9-8c208e61fc40",
+        "e077733d-1c1f-40f9-b4cc-8def0dc4cdd7",
+        "f9ad58e8-24fb-4611-b2a9-235240dd1f28",
+        "fc519ffd-5801-41a4-b4a3-5674322c762a",
+        "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.0"
+      ]
+    },
+    {
+      "ref": "b9686a5b-2f64-48f5-8acf-a7ad5f8d4bc8",
+      "dependsOn": [
+        "361e63d4-e4af-4d46-847f-fad12240d7bf",
+        "725baa9e-e186-430e-bc87-5f884b0a0e20"
+      ]
+    },
+    {
+      "ref": "bcb3b7cf-b091-4fd0-a633-f0e129545361",
+      "dependsOn": []
+    },
+    {
+      "ref": "be5ae771-0d27-48bb-81d7-0591fded58df",
+      "dependsOn": [
+        "4fa6d000-789d-4737-9de3-47eef0de1edf"
+      ]
+    },
+    {
+      "ref": "beebf68a-a257-4d72-ba3f-ad7458720f4b",
+      "dependsOn": []
+    },
+    {
+      "ref": "bfe74d80-15cd-4fff-880a-86d774756170",
+      "dependsOn": [
+        "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@3.3.3",
+        "pkg:nuget/System.Collections.Immutable@6.0.0",
+        "pkg:nuget/System.Reflection.Metadata@6.0.1",
+        "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+        "pkg:nuget/System.Text.Encoding.CodePages@6.0.0"
+      ]
+    },
+    {
+      "ref": "c89ae04d-ce27-4e53-95fe-cb7f5a9b72d6",
+      "dependsOn": [
+        "9a4e1849-bbb6-47af-aeac-5e587448ea7c"
+      ]
+    },
+    {
+      "ref": "c95ff896-c04d-4510-b8dd-87454a155951",
+      "dependsOn": []
+    },
+    {
+      "ref": "c960c03f-adf8-43d1-8947-21448706b8af",
+      "dependsOn": [
+        "bfe74d80-15cd-4fff-880a-86d774756170"
+      ]
+    },
+    {
+      "ref": "cbbdb065-b8c3-4445-813b-b395d8cd7aae",
+      "dependsOn": [
+        "8b51fc6e-39b3-433a-af63-71a746b9d6da"
+      ]
+    },
+    {
+      "ref": "d25e10dd-09a6-4094-8de0-57a003c38387",
+      "dependsOn": [
+        "1c3bf9f3-afc2-438e-b7d4-9e8c38142cd5",
+        "pkg:nuget/Microsoft.Extensions.Logging@8.0.0"
+      ]
+    },
+    {
+      "ref": "d38e72ef-8912-4074-a464-1e12a210f309",
+      "dependsOn": [
+        "44d48d29-73c3-4e78-bd51-cd0273d30b5b",
+        "60ddcb6b-dbb1-4ab4-b63a-a0d804752581",
+        "6422b25f-8203-4801-bfe2-fc0deea23232",
+        "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.0.0"
+      ]
+    },
+    {
+      "ref": "d471f7c1-a1dc-4d2b-a02a-10bcf3525ef2",
+      "dependsOn": [
+        "99c173a4-e655-417b-8a99-8993b7108fae"
+      ]
+    },
+    {
+      "ref": "d514934f-cdd9-4141-97f1-2dd3678f2970",
+      "dependsOn": [
+        "525dcc51-667d-4ed7-a0db-87fe0d782f62",
+        "c89ae04d-ce27-4e53-95fe-cb7f5a9b72d6"
+      ]
+    },
+    {
+      "ref": "d526485b-3d54-4fd1-a7f9-e058d2c4e644",
+      "dependsOn": [
+        "37e7bf27-ac9c-4977-8767-364dde756cd0"
+      ]
+    },
+    {
+      "ref": "d5345300-76e5-4903-894e-cd666b1b221d",
+      "dependsOn": []
+    },
+    {
+      "ref": "d5578d00-a26c-4cdd-903b-0ca370f9aa15",
+      "dependsOn": []
+    },
+    {
+      "ref": "d5f37136-f9a1-4b26-b671-da04b521dfd6",
+      "dependsOn": [
+        "3648d70a-d766-4f54-ac12-1ccce69d0a1f",
+        "378ed558-9ed4-47d3-88a3-80758b29de3a",
+        "43db78ec-2880-448b-a352-56ae66327e0e",
+        "8585f8fe-b772-4809-bc3b-16963394f3c4",
+        "89c18285-ce0b-42ad-ad2b-ed43f9b0598e",
+        "9b565ad7-6980-4201-ae21-e75796476244",
+        "b3c3145e-0b52-479b-b817-4c321a128806"
+      ]
+    },
+    {
+      "ref": "d5f771bf-9a12-461c-b453-64da84298d61",
+      "dependsOn": [
+        "26a33beb-03fc-4146-ba98-36769ba10f2a",
+        "6c822854-f0ee-488e-93da-7362422e8749",
+        "a3584cf8-37c1-499e-83e8-3402e50892ac",
+        "f250c763-da08-4487-8630-56350ade87ee"
+      ]
+    },
+    {
+      "ref": "d610db1a-6c75-4e22-b2f8-7b7a3ecfb971",
+      "dependsOn": []
+    },
+    {
+      "ref": "d782623f-bf6b-4b20-a5f4-2cced419a367",
+      "dependsOn": [
+        "a8b8f6b2-989d-4068-b0fd-de2ed1270f20"
+      ]
+    },
+    {
+      "ref": "d78410b6-fded-43c0-ba2c-1887b330e997",
+      "dependsOn": [
+        "29179f9b-bc93-40a7-b081-d966bb0a68e4",
+        "3f084158-cad9-44fe-b330-30e1a8231db8"
+      ]
+    },
+    {
+      "ref": "db74952d-26f9-401f-99b0-5d75809e62d1",
+      "dependsOn": [
+        "a8b8f6b2-989d-4068-b0fd-de2ed1270f20"
+      ]
+    },
+    {
+      "ref": "dc31327d-dce6-4dba-9d26-f2ff51df75f2",
+      "dependsOn": [
+        "8b51fc6e-39b3-433a-af63-71a746b9d6da",
+        "cbbdb065-b8c3-4445-813b-b395d8cd7aae",
+        "e9d1342e-c2e5-4ca3-8070-a6964f1a468d"
+      ]
+    },
+    {
+      "ref": "dc5c0398-a41e-4723-83c8-0ad90906234a",
+      "dependsOn": [
+        "a33ddfa0-2330-45a2-b1d0-1409c706b68f"
+      ]
+    },
+    {
+      "ref": "deb47f3a-4dc3-4c3f-98ba-190224faae98",
+      "dependsOn": [
+        "38e6cf1a-943f-417f-8962-db6bcf153fa6"
+      ]
+    },
+    {
+      "ref": "deb924cb-19c1-45f8-878f-c402d6d6c392",
+      "dependsOn": []
+    },
+    {
+      "ref": "df2fb74b-8185-46ae-9adc-19dd1deec411",
+      "dependsOn": [
+        "7e7aa87e-ef79-410b-b24a-bfaf0fce5a9f",
+        "a33ddfa0-2330-45a2-b1d0-1409c706b68f"
+      ]
+    },
+    {
+      "ref": "dfe62a55-9bb3-4ae5-88cb-f615a14e98b1",
+      "dependsOn": [
+        "02a8d785-9fdf-4815-a3f0-6323ebc9126a",
+        "480c5fa8-f7e8-4ba2-942b-50e2e167e134",
+        "4d3efead-3906-4f8b-9d2b-0f85681b5e29",
+        "89c18285-ce0b-42ad-ad2b-ed43f9b0598e"
+      ]
+    },
+    {
+      "ref": "e0504acb-ff81-447a-a9a6-aea12f34e5f9",
+      "dependsOn": []
+    },
+    {
+      "ref": "e077733d-1c1f-40f9-b4cc-8def0dc4cdd7",
+      "dependsOn": [
+        "44b42885-358c-4c34-bbbf-33b203e87779"
+      ]
+    },
+    {
+      "ref": "e0ec8131-ce58-4c9c-9073-66e1db60968f",
+      "dependsOn": [
+        "2401696e-78f6-41a5-ac8f-037225fa21fe"
+      ]
+    },
+    {
+      "ref": "e1c10e95-2995-468d-a32a-439ac93dfd6e",
+      "dependsOn": [
+        "dfe62a55-9bb3-4ae5-88cb-f615a14e98b1"
+      ]
+    },
+    {
+      "ref": "e2236aa5-18ae-49cc-ad81-3ce191000d9c",
+      "dependsOn": []
+    },
+    {
+      "ref": "e2d3c3b7-6e7a-4c96-9557-6639018b95eb",
+      "dependsOn": [
+        "4fa6d000-789d-4737-9de3-47eef0de1edf",
+        "be5ae771-0d27-48bb-81d7-0591fded58df"
+      ]
+    },
+    {
+      "ref": "e97423bc-01d7-483c-a75b-c237476da6f0",
+      "dependsOn": [
+        "3a091209-933d-441d-8939-60dbd464ddc4"
+      ]
+    },
+    {
+      "ref": "e9d1342e-c2e5-4ca3-8070-a6964f1a468d",
+      "dependsOn": []
+    },
+    {
+      "ref": "eb731300-5ad7-4bde-871b-89e474be3b81",
+      "dependsOn": [
+        "32f449c2-0b61-4552-8bd2-3793b001c0a5",
+        "3e6ba31d-c9aa-41a0-9227-dfad85a9b6ef"
+      ]
+    },
+    {
+      "ref": "ec2251b2-f001-4e50-9655-087ed74f6d7b",
+      "dependsOn": []
+    },
+    {
+      "ref": "ee21a43e-a80c-4f12-a705-a25eb0934309",
+      "dependsOn": [
+        "1b182b0a-5925-4fa2-b6a7-c5c4ab2e1b38"
+      ]
+    },
+    {
+      "ref": "f250c763-da08-4487-8630-56350ade87ee",
+      "dependsOn": [
+        "15b728c7-abd4-429c-b2d8-2a3621019422",
+        "26a33beb-03fc-4146-ba98-36769ba10f2a",
+        "35e8462b-6622-4bca-8a92-efad8c8d2405",
+        "6c822854-f0ee-488e-93da-7362422e8749",
+        "92fdb25e-72b7-4b6c-9d26-150b56a6ca37",
+        "a3584cf8-37c1-499e-83e8-3402e50892ac",
+        "e0504acb-ff81-447a-a9a6-aea12f34e5f9",
+        "e97423bc-01d7-483c-a75b-c237476da6f0",
+        "ee21a43e-a80c-4f12-a705-a25eb0934309"
+      ]
+    },
+    {
+      "ref": "f2904257-57d2-4ff5-b058-0fb080feb68e",
+      "dependsOn": []
+    },
+    {
+      "ref": "f30bb026-5e81-48e0-8824-eb56696cbb7d",
+      "dependsOn": [
+        "4fa6d000-789d-4737-9de3-47eef0de1edf",
+        "5cc16979-dcd7-4b7d-a022-5e234bf9481a"
+      ]
+    },
+    {
+      "ref": "f45b0654-9ad4-4c40-93e4-bcf30ec2950b",
+      "dependsOn": []
+    },
+    {
+      "ref": "f486d53a-5c0c-42d6-a1c8-63e0e010f3cb",
+      "dependsOn": [
+        "f2904257-57d2-4ff5-b058-0fb080feb68e"
+      ]
+    },
+    {
+      "ref": "f58b5434-2414-401c-b319-227d1e60c272",
+      "dependsOn": [
+        "e9d1342e-c2e5-4ca3-8070-a6964f1a468d"
+      ]
+    },
+    {
+      "ref": "f93d44e2-0cbe-400f-ac6a-70f4444f8593",
+      "dependsOn": []
+    },
+    {
+      "ref": "f9ad58e8-24fb-4611-b2a9-235240dd1f28",
+      "dependsOn": [
+        "17b3b3bc-1576-4035-8221-7182ef149220",
+        "291e2350-6061-4124-8b62-9edd15207091",
+        "d610db1a-6c75-4e22-b2f8-7b7a3ecfb971",
+        "fc519ffd-5801-41a4-b4a3-5674322c762a"
+      ]
+    },
+    {
+      "ref": "fa843e7c-5bee-4ead-8d12-dc7a529dd7b6",
+      "dependsOn": [
+        "38fa15eb-5c31-4fc1-9283-3f0a00926863"
+      ]
+    },
+    {
+      "ref": "fc519ffd-5801-41a4-b4a3-5674322c762a",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.MongoDb@8.0.0",
+      "dependsOn": [
+        "pkg:nuget/MongoDB.Driver@2.24.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.MongoDb@8.0.1",
+      "dependsOn": [
+        "d5f771bf-9a12-461c-b453-64da84298d61",
+        "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Client@8.0.0",
+      "dependsOn": [
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Client@8.0.1",
+      "dependsOn": [
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.1",
+        "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.0",
+      "dependsOn": [
+        "38e6cf1a-943f-417f-8962-db6bcf153fa6"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.1",
+      "dependsOn": [
+        "c95ff896-c04d-4510-b8dd-87454a155951",
+        "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.0",
+      "dependsOn": [
+        "d78410b6-fded-43c0-ba2c-1887b330e997",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.1",
+      "dependsOn": [
+        "a33ddfa0-2330-45a2-b1d0-1409c706b68f",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Core@8.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI.InMemory.Storage@8.0.0",
+      "dependsOn": [
+        "013ac7b3-c289-4273-ab7c-b62a06126c4d",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI.InMemory.Storage@8.0.1",
+      "dependsOn": [
+        "dc5c0398-a41e-4723-83c8-0ad90906234a",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI@8.0.0",
+      "dependsOn": [
+        "5e146f26-6208-4e48-873e-b23eba80b913",
+        "b680de65-f0a3-49aa-9025-4a4c89ca40e7",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/AspNetCore.HealthChecks.UI@8.0.1",
+      "dependsOn": [
+        "58656c5d-3c2a-417d-ac24-5573fe3dd227",
+        "82ee244b-3c3d-4b31-8714-f0c667c888ec",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Data@8.0.1",
+        "pkg:nuget/Microsoft.Extensions.Http@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/CatalogMicroservice@1.0.0",
+      "dependsOn": [
+        "13000322-97d7-46e6-b2e2-f09ba42384a6",
+        "3f084158-cad9-44fe-b330-30e1a8231db8",
+        "beebf68a-a257-4d72-ba3f-ad7458720f4b",
+        "pkg:nuget/AspNetCore.HealthChecks.MongoDb@8.0.0",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.Client@8.0.0",
+        "pkg:nuget/AspNetCore.HealthChecks.UI.InMemory.Storage@8.0.0",
+        "pkg:nuget/AspNetCore.HealthChecks.UI@8.0.0",
+        "pkg:nuget/MongoDB.Driver@2.24.0",
+        "pkg:nuget/Serilog.AspNetCore@8.0.1"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.AspNetCore.Authentication.JwtBearer@8.0.3",
+      "dependsOn": [
+        "51d7d594-bd91-4f6b-a82e-4a0863db5618"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.CodeAnalysis.Analyzers@3.3.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.EntityFrameworkCore.Analyzers@8.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.ApiDescription.Server@6.0.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Caching.Abstractions@8.0.0",
+      "dependsOn": [
+        "3d1cdf4a-d25a-4fb6-adbf-12b6cecbff9a"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Configuration.Binder@8.0.0",
+      "dependsOn": [
+        "7e7aa87e-ef79-410b-b24a-bfaf0fce5a9f"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Configuration@8.0.0",
+      "dependsOn": [
+        "3d1cdf4a-d25a-4fb6-adbf-12b6cecbff9a",
+        "7e7aa87e-ef79-410b-b24a-bfaf0fce5a9f"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.DependencyInjection@8.0.0",
+      "dependsOn": [
+        "c95ff896-c04d-4510-b8dd-87454a155951"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0",
+      "dependsOn": [
+        "2f97bef8-7e42-4c1b-b2ee-d793489e5d2c",
+        "c95ff896-c04d-4510-b8dd-87454a155951",
+        "pkg:nuget/System.Diagnostics.DiagnosticSource@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions@8.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks@8.0.0",
+      "dependsOn": [
+        "26a33beb-03fc-4146-ba98-36769ba10f2a",
+        "2f97bef8-7e42-4c1b-b2ee-d793489e5d2c",
+        "pkg:nuget/Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions@8.0.0",
+        "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Diagnostics@8.0.0",
+      "dependsOn": [
+        "pkg:nuget/Microsoft.Extensions.Configuration@8.0.0",
+        "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0",
+        "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0",
+      "dependsOn": [
+        "3d1cdf4a-d25a-4fb6-adbf-12b6cecbff9a"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Hosting.Abstractions@8.0.0",
+      "dependsOn": [
+        "26a33beb-03fc-4146-ba98-36769ba10f2a",
+        "7e7aa87e-ef79-410b-b24a-bfaf0fce5a9f",
+        "c95ff896-c04d-4510-b8dd-87454a155951",
+        "pkg:nuget/Microsoft.Extensions.Diagnostics.Abstractions@8.0.0",
+        "pkg:nuget/Microsoft.Extensions.FileProviders.Abstractions@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Http@8.0.0",
+      "dependsOn": [
+        "26a33beb-03fc-4146-ba98-36769ba10f2a",
+        "2f97bef8-7e42-4c1b-b2ee-d793489e5d2c",
+        "7e7aa87e-ef79-410b-b24a-bfaf0fce5a9f",
+        "c95ff896-c04d-4510-b8dd-87454a155951",
+        "pkg:nuget/Microsoft.Extensions.Diagnostics@8.0.0",
+        "pkg:nuget/Microsoft.Extensions.Logging@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Logging.Abstractions@2.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Logging@8.0.0",
+      "dependsOn": [
+        "26a33beb-03fc-4146-ba98-36769ba10f2a",
+        "2f97bef8-7e42-4c1b-b2ee-d793489e5d2c",
+        "pkg:nuget/Microsoft.Extensions.DependencyInjection@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.ObjectPool@7.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.Extensions.Options.ConfigurationExtensions@8.0.0",
+      "dependsOn": [
+        "2f97bef8-7e42-4c1b-b2ee-d793489e5d2c",
+        "3d1cdf4a-d25a-4fb6-adbf-12b6cecbff9a",
+        "7e7aa87e-ef79-410b-b24a-bfaf0fce5a9f",
+        "c95ff896-c04d-4510-b8dd-87454a155951",
+        "pkg:nuget/Microsoft.Extensions.Configuration.Binder@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.OpenApi@1.2.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.OpenApi@1.6.14",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Microsoft.VisualStudio.Azure.Containers.Tools.Targets@1.21.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/MongoDB.Bson@2.24.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/MongoDB.Driver.Core@2.24.0",
+      "dependsOn": [
+        "44a5356e-9b17-4f9d-baf6-aefd0ffc1185",
+        "a417cf7c-b088-40b9-b0dc-f4141e6cf425",
+        "a52d2ab7-61d7-4c0c-9ac2-db8742af47e2",
+        "beebf68a-a257-4d72-ba3f-ad7458720f4b",
+        "deb47f3a-4dc3-4c3f-98ba-190224faae98",
+        "deb924cb-19c1-45f8-878f-c402d6d6c392",
+        "pkg:nuget/MongoDB.Bson@2.24.0",
+        "pkg:nuget/MongoDB.Libmongocrypt@1.8.2"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/MongoDB.Driver@2.24.0",
+      "dependsOn": [
+        "deb47f3a-4dc3-4c3f-98ba-190224faae98",
+        "pkg:nuget/MongoDB.Bson@2.24.0",
+        "pkg:nuget/MongoDB.Driver.Core@2.24.0",
+        "pkg:nuget/MongoDB.Libmongocrypt@1.8.2"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/MongoDB.Libmongocrypt@1.8.2",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Serilog.AspNetCore@8.0.1",
+      "dependsOn": [
+        "03fad9c6-6de3-4f39-b944-47301ec2027d",
+        "45d282e9-5d62-4045-9128-df4729a2d1e7",
+        "9417feb4-514b-4229-b041-6665a1e489e3",
+        "a01603e9-65b5-49bd-9e34-974a26cf4bf6",
+        "a8b8f6b2-989d-4068-b0fd-de2ed1270f20",
+        "d782623f-bf6b-4b20-a5f4-2cced419a367",
+        "db74952d-26f9-401f-99b0-5d75809e62d1",
+        "pkg:nuget/Serilog.Settings.Configuration@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Serilog.AspNetCore@8.0.3",
+      "dependsOn": [
+        "1cf14772-f3f3-4200-80e4-b94bb5c4e00f",
+        "601f1570-331e-4cb2-b644-29f01dede84c",
+        "62b6f746-a09a-40fd-bcf2-9a1a6aa72591",
+        "790a1ed0-0eaf-4271-ba7b-dbc04e677074",
+        "f2904257-57d2-4ff5-b058-0fb080feb68e",
+        "f486d53a-5c0c-42d6-a1c8-63e0e010f3cb",
+        "pkg:nuget/Microsoft.Extensions.Logging@8.0.0",
+        "pkg:nuget/Serilog.Settings.Configuration@8.0.4"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Serilog.Settings.Configuration@8.0.0",
+      "dependsOn": [
+        "a8b8f6b2-989d-4068-b0fd-de2ed1270f20",
+        "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Serilog.Settings.Configuration@8.0.4",
+      "dependsOn": [
+        "f2904257-57d2-4ff5-b058-0fb080feb68e",
+        "pkg:nuget/Microsoft.Extensions.Configuration.Binder@8.0.0",
+        "pkg:nuget/Microsoft.Extensions.DependencyModel@8.0.2"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.5.0",
+      "dependsOn": [
+        "pkg:nuget/Microsoft.OpenApi@1.2.3"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.9.0",
+      "dependsOn": [
+        "pkg:nuget/Microsoft.OpenApi@1.6.14"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerGen@6.5.0",
+      "dependsOn": [
+        "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.5.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerGen@6.9.0",
+      "dependsOn": [
+        "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.9.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.5.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.9.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/Swashbuckle.AspNetCore@6.9.0",
+      "dependsOn": [
+        "pkg:nuget/Microsoft.Extensions.ApiDescription.Server@6.0.5",
+        "pkg:nuget/Swashbuckle.AspNetCore.Swagger@6.9.0",
+        "pkg:nuget/Swashbuckle.AspNetCore.SwaggerGen@6.9.0",
+        "pkg:nuget/Swashbuckle.AspNetCore.SwaggerUI@6.9.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.Collections.Immutable@6.0.0",
+      "dependsOn": [
+        "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.Composition@6.0.0",
+      "dependsOn": [
+        "8b51fc6e-39b3-433a-af63-71a746b9d6da",
+        "cbbdb065-b8c3-4445-813b-b395d8cd7aae",
+        "dc31327d-dce6-4dba-9d26-f2ff51df75f2",
+        "e9d1342e-c2e5-4ca3-8070-a6964f1a468d",
+        "f58b5434-2414-401c-b319-227d1e60c272"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.Diagnostics.DiagnosticSource@8.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/System.IO.Pipelines@6.0.3",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/System.Reflection.Metadata@6.0.1",
+      "dependsOn": [
+        "pkg:nuget/System.Collections.Immutable@6.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@5.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/System.Text.Encoding.CodePages@6.0.0",
+      "dependsOn": [
+        "pkg:nuget/System.Runtime.CompilerServices.Unsafe@6.0.0"
+      ]
+    },
+    {
+      "ref": "pkg:nuget/System.Text.Json@8.0.5",
+      "dependsOn": []
+    },
+    {
+      "ref": "pkg:nuget/System.Threading.Channels@6.0.0",
+      "dependsOn": []
+    }
+  ],
+  "vulnerabilities": []
+}

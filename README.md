@@ -1,9 +1,10 @@
 # Reto SCA: remediación de vulnerabilidades — Angular + .NET
 
 **Rol:** Analista Desarrollador Fullstack (énfasis DevSecOps)  
-**Enfoque:** Fase A (fix mínimo / gate CRITICAL+HIGH = 0) → Fase B (modernización)  
-**Fecha:** YYYY-MM-DD  
-**Autor:** Tu Nombre
+**Enfoque:** Fase A (gate 0 CRITICAL/HIGH) → Fase B (modernización + DevSecOps)  
+**Fecha:** 2026-09-01  
+**Autor:** Julio Pineda  
+**Repositorio:** https://github.com/jpinedahdzz/reto-sca-angular-dotnet
 
 ---
 
@@ -17,51 +18,55 @@ Análisis y remediación SCA (Software Composition Analysis) sobre dos proyectos
 | Backend .NET | [aelassas/microservices](https://github.com/aelassas/microservices) — `CatalogMicroservice` | `catalog-microservice/` |
 
 **Criterio de aceptación:**  
-`trivy fs --scanners vuln --severity CRITICAL,HIGH` → **0 hallazgos** en Angular y .NET al final de la Fase A (y se mantiene en Fase B).  
-MEDIUM no remediados: justificación individual (sección 7).
+`trivy fs --scanners vuln --severity CRITICAL,HIGH` → **0 hallazgos** en Angular y .NET.
 
 ---
 
-## 2. Estrategia (híbrido)
+## 2. Estrategia (híbrido 1 + 2)
 
-| Fase | Objetivo | Resultado esperado |
-| ---- | -------- | ------------------ |
-| **A — Gate** | Remediación mínima (bumps, overrides, PackageReference) | 0 CRITICAL, 0 HIGH; proyectos compilando |
-| **B — Modernización** | Subir Angular (ruta de majors) y .NET a LTS razonable | Menos deuda; mismo gate en verde |
+| Fase | Objetivo | Resultado |
+| ---- | -------- | --------- |
+| **A — Gate** | Cerrar CRITICAL/HIGH con el cambio mínimo que compile | 0 CRITICAL, 0 HIGH |
+| **B — Modernización** | Actualizar paquetes directos, CI gate, Dependabot, SBOM | Mismo gate en verde + menos deuda |
 
-Evidencia Trivy en tres momentos: baseline → post Fase A → post Fase B.
-
-| Tag Git (recomendado) | Momento |
-| --------------------- | ------- |
+| Tag Git | Momento |
+| ------- | ------- |
 | `baseline` | Antes de cambios |
 | `phase-a-gate-green` | Tras Fase A |
 | `phase-b-modernized` | Tras Fase B |
+
+```powershell
+git checkout baseline              # estado vulnerable + reportes 01
+git checkout phase-a-gate-green    # gate verde Fase A
+git checkout phase-b-modernized    # Fase B (CI, Dependabot, SBOM)
+```
 
 ---
 
 ## 3. Prerrequisitos
 
-| Herramienta | Uso | Instalación (Windows, ejemplo) |
-| ----------- | --- | ------------------------------ |
-| [Trivy](https://aquasecurity.github.io/trivy/) | SCA filesystem | `scoop install trivy` / `choco install trivy` |
-| Node.js + npm | Angular | LTS alineada al proyecto (ver `engines` / README upstream) |
-| .NET SDK | CatalogMicroservice | Versión compatible con el `TargetFramework` |
-| Git | Versionado y tags | — |
-
-Verificar:
+| Herramienta | Instalación (Windows) |
+| ----------- | --------------------- |
+| [Trivy](https://aquasecurity.github.io/trivy/) | `winget install AquaSecurity.Trivy` |
+| Node.js 22 + npm | Para Angular |
+| .NET SDK 8 | Para CatalogMicroservice |
 
 ```powershell
-trivy --version
-node -v
-npm -v
-dotnet --version
+trivy --version    # 0.74.0+
+node -v            # v22.x
+dotnet --version   # 8.0.x
 ```
 
-Referencias:
+**.NET — requisito para Trivy:** habilitar `packages.lock.json`:
 
-- Angular Update Guide: https://update.angular.io  
-- `dotnet list package --vulnerable`: https://learn.microsoft.com/en-us/dotnet/core/tools/dotnet-list-package  
-- OSV (CVEs): https://osv.dev  
+```xml
+<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+```
+
+```powershell
+dotnet restore .\catalog-microservice\CatalogMicroservice\CatalogMicroservice.csproj --force-evaluate
+dotnet restore .\catalog-microservice\Middleware\Middleware.csproj --force-evaluate
+```
 
 ---
 
@@ -70,35 +75,24 @@ Referencias:
 Desde la raíz del repositorio:
 
 ```powershell
-# --- Baseline (01) ---
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app | Tee-Object -FilePath reports/angular/01-before-trivy.txt
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice | Tee-Object -FilePath reports/catalog-microservice/01-before-trivy.txt
+# Baseline (01)
+trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app | Tee-Object reports/angular/01-before-trivy.txt
+trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice | Tee-Object reports/catalog-microservice/01-before-trivy.txt
 
-# --- Tras Fase A (02) ---
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app | Tee-Object -FilePath reports/angular/02-after-min-fix-trivy.txt
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice | Tee-Object -FilePath reports/catalog-microservice/02-after-min-fix-trivy.txt
+# Tras Fase A (02)
+trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app | Tee-Object reports/angular/02-after-min-fix-trivy.txt
+trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice | Tee-Object reports/catalog-microservice/02-after-min-fix-trivy.txt
 
-# --- Tras Fase B (03) ---
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app | Tee-Object -FilePath reports/angular/03-after-modernize-trivy.txt
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice | Tee-Object -FilePath reports/catalog-microservice/03-after-modernize-trivy.txt
+# Tras Fase B (03)
+trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app | Tee-Object reports/angular/03-after-modernize-trivy.txt
+trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice | Tee-Object reports/catalog-microservice/03-after-modernize-trivy.txt
 ```
 
-Opcional (JSON):
+Complementarios:
 
 ```powershell
-trivy fs --scanners vuln --severity CRITICAL,HIGH --format json -o reports/angular/01-before-trivy.json ./angular-app
-```
-
-Complementarios (diagnóstico, no sustituyen a Trivy para el gate):
-
-```powershell
-# Angular
-cd angular-app
-npm audit
-
-# .NET
+cd angular-app && npm audit
 cd catalog-microservice
-dotnet restore
 dotnet list package --vulnerable --include-transitive
 ```
 
@@ -110,101 +104,94 @@ dotnet list package --vulnerable --include-transitive
 
 | Momento | Angular CRITICAL | Angular HIGH | .NET CRITICAL | .NET HIGH | Reportes |
 | ------- | ---------------- | ------------ | ------------- | --------- | -------- |
-| Before | _n_ | _m_ | _n_ | _m_ | `reports/*/01-before-trivy.txt` |
+| Before | 0 | **13** | 0 | **4** | `reports/*/01-before-trivy.txt` |
 | Fase A | **0** | **0** | **0** | **0** | `reports/*/02-after-min-fix-trivy.txt` |
 | Fase B | **0** | **0** | **0** | **0** | `reports/*/03-after-modernize-trivy.txt` |
 
 ### Versiones de plataforma
 
-| Momento | Angular | Node (build) | .NET `TargetFramework` |
-| ------- | ------- | ------------ | ---------------------- |
-| Before | 14.x | _x_ | netX.0 |
-| Fase A | 14.x (+ deps/overrides) | _x_ | netX.0 (+ package bumps) |
-| Fase B | _15/16/17/18.x_ | _y_ | net8.0 (o el elegido) |
+| Momento | Angular | Node | .NET TFM |
+| ------- | ------- | ---- | -------- |
+| Before | 14.3.0 | — | net8.0 |
+| Fase A | **20.3.27** | 22.x | net8.0 (+ bumps transitivos) |
+| Fase B | 20.3.27 | 22.x | net8.0 (+ paquetes directos actualizados) |
 
 ---
 
 ## 6. Análisis de hallazgos (CRITICAL / HIGH)
 
-Completar una fila por CVE relevante del baseline. Usar OSV + árbol de dependencias (`npm ls <pkg>`, `dotnet list package --include-transitive`).
+### 6.1 Angular (baseline — 13 HIGH, 0 CRITICAL)
 
-### 6.1 Angular
+Todos en `@angular/common`, `@angular/compiler` y `@angular/core` @ **14.3.0**. No existían parches en la rama 14; Trivy/OSV indican fixed en **19.x / 20.x / 21.x**.
 
-| CVE / ID | Paquete (versión instalada) | Directo / Transitivo | Severidad | Impacto en esta app | Acción Fase A | Acción Fase B |
-| -------- | --------------------------- | -------------------- | --------- | ------------------- | ------------- | ------------- |
-| CVE-… | `pkg@1.2.3` | Transitivo vía `foo` | HIGH | _ej. XSS en … / no expuesto pero gate exige fix_ | Override / bump a `1.2.4` | Resuelto al subir Angular / deps |
-| | | | | | | |
+| CVE | Paquete | Tipo | Impacto resumido | Remediación |
+| --- | ------- | ---- | ---------------- | ----------- |
+| CVE-2025-66035 | @angular/common | Directo | Fuga XSRF token vía URLs protocol-relative | Angular 20.3.27 |
+| CVE-2026-50170 | @angular/common | Directo | Filtrado de credenciales en HttpTransferCache | Angular 20.3.27 |
+| CVE-2026-50171 | @angular/common | Directo | DoS vía digitsInfo malformado | Angular 20.3.27 |
+| CVE-2026-54266 | @angular/common | Directo | Cache poisoning (hash débil 32-bit) | Angular 20.3.27 |
+| CVE-2026-54268 | @angular/common | Directo | DoS vía formato de fecha | Angular 20.3.27 |
+| CVE-2026-68945 | @angular/common | Directo | Reuso cross-request / state poisoning | Angular 20.3.27 |
+| CVE-2025-66412 | @angular/compiler | Directo | XSS almacenado (SVG/MathML) | Angular 20.3.27 |
+| CVE-2026-22610 | @angular/compiler, @angular/core | Directo | XSS en Template Compiler | Angular 20.3.27 |
+| CVE-2026-69151 | @angular/compiler, @angular/core | Directo | XSS vía handlers i18n | Angular 20.3.27 |
+| CVE-2026-27970 | @angular/core | Directo | XSS vía archivos de traducción | Angular 20.3.27 |
+| CVE-2026-54267 | @angular/core | Directo | DOM clobbering / cache poisoning (hydration) | Angular 20.3.27 |
 
-### 6.2 CatalogMicroservice (.NET)
+**Decisión Fase A:** subir `@angular/*` a **20.3.27** (mínimo con fixes publicados). Añadir `standalone: false` en componentes NgModule (Angular 20 trata componentes como standalone por defecto).
 
-| CVE / ID | Paquete (versión instalada) | Directo / Transitivo | Severidad | Impacto en esta app | Acción Fase A | Acción Fase B |
-| -------- | --------------------------- | -------------------- | --------- | ------------------- | ------------- | ------------- |
-| CVE-… | `Package.Name 1.0.0` | Directo | CRITICAL | _ej. RCE en deserialización si…_ | `PackageReference` → `1.0.1` | Incluido en upgrade TFM/LTS |
-| | | | | | | |
+### 6.2 .NET (baseline — 4 HIGH únicos en lockfile)
 
-### Decisiones técnicas (narrativa corta)
+| CVE | Paquete | Tipo | Versión | Fix | Remediación |
+| --- | ------- | ---- | ------- | --- | ----------- |
+| CVE-2026-44302 | Snappier | Transitivo | 1.0.0 | 1.3.1 | PackageReference directo 1.3.1 |
+| CVE-2024-43483 | Microsoft.Extensions.Caching.Memory | Transitivo | 8.0.0 | 8.0.1 | PackageReference directo 8.0.1 |
+| CVE-2024-30105 | System.Text.Json | Transitivo | 8.0.0 | 8.0.4 | PackageReference directo 8.0.5 |
+| CVE-2024-43485 | System.Text.Json | Transitivo | 8.0.0 | 8.0.5 | PackageReference directo 8.0.5 |
 
-**Fase A**
+**Decisión Fase A:** forzar versiones seguras con `PackageReference` directo (patrón NuGet para transitivos vulnerables).
 
-- _Ej.: se priorizó bump de X porque Fixed Version en Trivy/OSV es Y; override de Z porque es transitivo sin padre actualizable sin romper Angular 14._
-
-**Fase B**
-
-- _Ej.: Angular 14 → 15 → 16 según update.angular.io; .NET net6.0 → net8.0; paquetes alineados al SDK._
+**Decisión Fase B:** actualizar paquetes directos (HealthChecks 8.0.1, Serilog 8.0.3, Swashbuckle 6.9.0, JwtBearer 8.0.11). MongoDB.Driver se mantiene en **2.24.0** por incompatibilidad de ensamblado con HealthChecks UI al subir a 2.30+.
 
 ---
 
-## 7. MEDIUM no remediados (justificación individual)
+## 7. MEDIUM no remediados (justificación)
 
-| Proyecto | CVE / paquete | Por qué se acepta |
-| -------- | ------------- | ----------------- |
-| Angular | CVE-… / `pkg` | _Sin fix publicado / falso positivo / riesgo no explotable en este contexto_ |
-| .NET | CVE-… / `Package` | _…_ |
+Fuera del gate CRITICAL/HIGH; detectados con `dotnet list package --vulnerable`:
 
-Si no quedan MEDIUM sin remediar: indicar **“N/A — todos remediados o no reportados en el alcance del gate.”**
+| Proyecto | Paquete | Severidad | Justificación |
+| -------- | ------- | --------- | ------------- |
+| .NET | KubernetesClient 12.1.1 | Moderate | Transitivo vía HealthChecks UI; no hay ruta de upgrade sin major de HealthChecks (9.x). Riesgo acotado: no se despliega contra cluster K8s en este reto. |
+| .NET | SharpCompress 0.30.1 | Moderate | Transitivo vía cadena HealthChecks/Kubernetes; sin fix en lockfile actual sin breaking change. |
+
+Angular: Trivy con `--severity CRITICAL,HIGH` no reporta MEDIUM en dependencias de producción tras Fase A/B.
 
 ---
 
 ## 8. Cambios realizados
 
-### Fase A — remediación mínima
+### Fase A
 
-**Angular (`angular-app/`)**
+**Angular:** `package.json`, `package-lock.json`, `standalone: false` en 7 componentes.
 
-- Archivos tocados: `package.json`, `package-lock.json`, _otros_
-- Overrides npm (si aplica):
+**CatalogMicroservice + Middleware:** `Snappier` 1.3.1, `Microsoft.Extensions.Caching.Memory` 8.0.1, `System.Text.Json` 8.0.5, `RestorePackagesWithLockFile`.
 
-```json
-"overrides": {
-  "paquete-vulnerable": "version-segura"
-}
-```
+### Fase B
 
-**CatalogMicroservice (`catalog-microservice/`)**
+**DevSecOps:** `.github/workflows/sca.yml` (Trivy gate en CI), `.github/dependabot.yml` (npm, nuget, actions).
 
-- Archivos tocados: `*.csproj`, _Directory.Packages.props si existe_, etc.
-- Paquetes subidos: `Package.A 1.0 → 1.2`, …
+**Paquetes .NET directos:** HealthChecks 8.0.1, Serilog 8.0.3, Swashbuckle 6.9.0, JwtBearer 8.0.11, Containers.Tools 1.21.0.
 
-### Fase B — modernización
-
-**Angular**
-
-- Ruta de upgrade: 14 → _N_ (comandos `ng update …` usados).
-- Breaking changes atendidos: _lista breve_.
-
-**.NET**
-
-- `TargetFramework`: `netX.0` → `netY.0`
-- Paquetes / SDK alineados: _lista breve_.
+**SBOM:** `reports/*/sbom-cyclonedx.json` (Trivy CycloneDX).
 
 ---
 
 ## 9. Verificación funcional
 
-| Proyecto | Comando build | Comando run | Resultado |
-| -------- | ------------- | ----------- | --------- |
-| Angular | `npm run build` | `npm start` / `ng serve` | OK / notas |
-| .NET | `dotnet build` | `dotnet run --project …` | OK / notas |
+| Proyecto | Build | Resultado |
+| -------- | ----- | --------- |
+| Angular | `cd angular-app && npm run build` | OK |
+| .NET | `dotnet build catalog-microservice/CatalogMicroservice/CatalogMicroservice.csproj` | OK |
 
 ---
 
@@ -213,57 +200,46 @@ Si no quedan MEDIUM sin remediar: indicar **“N/A — todos remediados o no rep
 ```text
 .
 ├── README.md
+├── .github/workflows/sca.yml
+├── .github/dependabot.yml
 ├── reports/
-│   ├── angular/
-│   │   ├── 01-before-trivy.txt
-│   │   ├── 02-after-min-fix-trivy.txt
-│   │   └── 03-after-modernize-trivy.txt
+│   ├── angular/          (01, 02, 03 + sbom-cyclonedx.json)
 │   └── catalog-microservice/
-│       ├── 01-before-trivy.txt
-│       ├── 02-after-min-fix-trivy.txt
-│       └── 03-after-modernize-trivy.txt
 ├── angular-app/
-└── catalog-microservice/
+└── catalog-microservice/   (CatalogMicroservice + Middleware)
 ```
 
-- **Pre-análisis (baseline):** `reports/*/01-before-trivy.txt`  
-- **Post-análisis Fase A (gate):** `reports/*/02-after-min-fix-trivy.txt`  
-- **Post-análisis Fase B (modernizado):** `reports/*/03-after-modernize-trivy.txt`  
+- **Pre-análisis:** `reports/*/01-before-trivy.txt`
+- **Post Fase A:** `reports/*/02-after-min-fix-trivy.txt`
+- **Post Fase B:** `reports/*/03-after-modernize-trivy.txt`
 
 ---
 
-## 11. Extra (opcional — puntos adicionales)
+## 11. CI — gate de seguridad
 
-### GitHub Actions (gate SCA)
+Workflow `.github/workflows/sca.yml`:
 
-Workflow ejemplo (`.github/workflows/sca.yml`): escaneo con Trivy en PRs/push; fallar si hay CRITICAL/HIGH.
-
-### Dependabot / Renovate
-
-- Ecosistemas: `npm` (`angular-app/`) y `nuget` (`catalog-microservice/`).
-
-### SBOM
-
-```powershell
-trivy fs --format cyclonedx -o reports/angular/sbom-cyclonedx.json ./angular-app
-trivy fs --format cyclonedx -o reports/catalog-microservice/sbom-cyclonedx.json ./catalog-microservice
-```
+- Dispara en push/PR a `main`
+- Escanea `angular-app/` y `catalog-microservice/` con Trivy
+- **Falla el pipeline** si hay CRITICAL o HIGH (`exit-code: 1`)
 
 ---
 
-## 12. Limitaciones y notas
+## 12. Limitaciones
 
-- _Ej.: modernización Angular detuvo en versión X por tiempo; el gate de aceptación ya estaba cumplido en Fase A._
-- _Ej.: el monorepo upstream se recortó a CatalogMicroservice para acotar el alcance._
+- Angular saltó **14 → 20** en Fase A (no había parches en 14.x); la “modernización por majors” ocurrió ahí por necesidad del gate.
+- Fase B no migró a Angular 21 ni a `application` builder para limitar breaking changes.
+- `CatalogMicroservice` incluye `Middleware` (ProjectReference) extraído del monorepo upstream.
+- MongoDB.Driver no se subió a 2.30+ por conflicto de ensamblado con HealthChecks UI.
 
 ---
 
 ## 13. Checklist de entrega
 
-- [ ] Código Angular y .NET modificados y compilando  
-- [ ] Reportes Trivy 01 (before), 02 (Fase A), 03 (Fase B) commiteados  
-- [ ] 0 CRITICAL y 0 HIGH en Fase A y Fase B (o justificación documentada)  
-- [ ] MEDIUM restantes justificados uno a uno  
-- [ ] Este README completo (tablas, decisiones, comandos exactos)  
-- [ ] Repo Git público (fork o propio)  
-- [ ] (Opcional) CI + Dependabot + SBOM  
+- [x] Código Angular y .NET modificados y compilando
+- [x] Reportes Trivy 01, 02, 03 commiteados
+- [x] 0 CRITICAL y 0 HIGH (Fase A y B)
+- [x] MEDIUM justificados (sección 7)
+- [x] README con tablas, decisiones y comandos
+- [x] Repo Git público
+- [x] CI Trivy + Dependabot + SBOM
