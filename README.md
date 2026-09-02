@@ -75,18 +75,15 @@ dotnet restore .\catalog-microservice\Middleware\Middleware.csproj --force-evalu
 Desde la raíz del repositorio:
 
 ```powershell
-# Baseline (01)
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app | Tee-Object reports/angular/01-before-trivy.txt
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice | Tee-Object reports/catalog-microservice/01-before-trivy.txt
+# Escaneo en consola (gate)
+trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app
+trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice
 
-# Tras Fase A (02)
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app | Tee-Object reports/angular/02-after-min-fix-trivy.txt
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice | Tee-Object reports/catalog-microservice/02-after-min-fix-trivy.txt
-
-# Tras Fase B (03)
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./angular-app | Tee-Object reports/angular/03-after-modernize-trivy.txt
-trivy fs --scanners vuln --severity CRITICAL,HIGH ./catalog-microservice | Tee-Object reports/catalog-microservice/03-after-modernize-trivy.txt
+# Guardar salida limpia en UTF-8 (evitar Tee-Object → UTF-16)
+trivy fs --scanners vuln --severity CRITICAL,HIGH --format json -o reports/angular/scan.json ./angular-app
 ```
+
+Los reportes legibles para la demo están en Markdown: `reports/**/*.md` (ver [`reports/README.md`](reports/README.md)).
 
 Complementarios:
 
@@ -102,11 +99,13 @@ dotnet list package --vulnerable --include-transitive
 
 ### Conteos Trivy (CRITICAL + HIGH)
 
-| Momento | Angular CRITICAL | Angular HIGH | .NET CRITICAL | .NET HIGH | Reportes |
-| ------- | ---------------- | ------------ | ------------- | --------- | -------- |
-| Before | 0 | **13** | 0 | **4** | `reports/*/01-before-trivy.txt` |
-| Fase A | **0** | **0** | **0** | **0** | `reports/*/02-after-min-fix-trivy.txt` |
-| Fase B | **0** | **0** | **0** | **0** | `reports/*/03-after-modernize-trivy.txt` |
+| Momento | Angular CRITICAL | Angular HIGH | .NET CRITICAL | .NET HIGH | Reportes (Markdown, UTF-8) |
+| ------- | ---------------- | ------------ | ------------- | --------- | -------------------------- |
+| Before | 0 | **13** | 0 | **4** | [`reports/angular/01-…`](reports/angular/01-before-trivy.md) / [`…/catalog…/01-…`](reports/catalog-microservice/01-before-trivy.md) |
+| Fase A | **0** | **0** | **0** | **0** | [`02-after-min-fix`](reports/angular/02-after-min-fix-trivy.md) |
+| Fase B | **0** | **0** | **0** | **0** | [`03-after-modernize`](reports/angular/03-after-modernize-trivy.md) |
+
+Índice de evidencia: [`reports/README.md`](reports/README.md).
 
 ### Versiones de plataforma
 
@@ -203,15 +202,16 @@ Angular: Trivy con `--severity CRITICAL,HIGH` no reporta MEDIUM en dependencias 
 ├── .github/workflows/sca.yml
 ├── .github/dependabot.yml
 ├── reports/
-│   ├── angular/          (01, 02, 03 + sbom-cyclonedx.json)
+│   ├── README.md         (índice de evidencia)
+│   ├── angular/          (01/02/03-*.md legibles + .txt crudos opcionales)
 │   └── catalog-microservice/
 ├── angular-app/
 └── catalog-microservice/   (CatalogMicroservice + Middleware)
 ```
 
-- **Pre-análisis:** `reports/*/01-before-trivy.txt`
-- **Post Fase A:** `reports/*/02-after-min-fix-trivy.txt`
-- **Post Fase B:** `reports/*/03-after-modernize-trivy.txt`
+- **Pre-análisis:** `reports/*/01-before-trivy.md`
+- **Post Fase A:** `reports/*/02-after-min-fix-trivy.md`
+- **Post Fase B:** `reports/*/03-after-modernize-trivy.md`
 
 ---
 

@@ -63,12 +63,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "ecommerce-angular-14:build:development"
+          },
           "configurations": {
             "production": {
-              "browserTarget": "ecommerce-angular-14:build:production"
+              "buildTarget": "ecommerce-angular-14:build:production"
             },
             "development": {
-              "browserTarget": "ecommerce-angular-14:build:development"
+              "buildTarget": "ecommerce-angular-14:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ecommerce-angular-14:build"
+            "buildTarget": "ecommerce-angular-14:build"
           }
         },
         "test": {
@@ -99,5 +102,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ab1028ac-2749-46c2-8a90-48fe231f490b"
   }
 }
